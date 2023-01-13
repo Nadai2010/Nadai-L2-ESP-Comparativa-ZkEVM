@@ -106,7 +106,11 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 ----
 
-# 📜 Scroll
+<div align="left">
+  <h1 style="font-size: larger;">
+     <strong> 📜 Scroll/strong> 
+ </h1>
+</div> 
 
 ## Principios de Scroll
 
@@ -228,7 +232,12 @@ Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue cas
 
 ---
 
-# Zk-Sync 2.0
+<div align="left">
+  <h1 style="font-size: larger;">
+   <img src="imágenes/zksync.png" width="25">
+   <strong>    Zk-Sync 2.0        </strong> 
+  </h1>
+</div>
 
 ## Principios Zk-Sync 2.0
 
