@@ -50,7 +50,13 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 * `Fee:` Es el costo de transacción y puede variar dependiendo de la congestión de la red y la competencia entre los validadores.
 
 ---
-# Taiko
+
+<div align="left">
+  <h1 style="font-size: larger;">
+    <strong> Taiko</strong> 
+    <img src="imágenes/polygon.png" width="60">
+  </h1>
+</div>
 
 ## Principios de Taiko
 
@@ -101,7 +107,7 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 ----
 
-# Scroll
+# 📜 Scroll
 
 ## Principios de Scroll
 
