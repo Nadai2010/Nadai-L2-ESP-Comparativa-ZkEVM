@@ -160,7 +160,12 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 ----
 
-# Zk-EVM-Polygon 
+<div align="left">
+  <h1 style="font-size: larger;">
+   <img src="imágenes/polygon.png" width="40">
+   <strong> Zk-EVM-Polygon</strong> 
+  </h1>
+</div>
 
 ## Principios de zk-EVM Polygon
 
