@@ -6,7 +6,7 @@ Pero primero hablemos un poco sobre ella, la zk-EVM es una tecnología que permi
 
 Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una con sus propias características y ventajas. A continuación describiremos algunas de las implementaciones más conocidas:
 
-* Taiko: Taiko es una implementación de zk-EVM desarrollada por el equipo de Parity Technologies. Se basa en el protocolo Rollup de Ethereum y se ejecuta en el algoritmo de consenso de prueba de participación delegada (DPoS) de Polkadot. Taiko permite la creación de contratos privados y la ejecución de transacciones privadas en una red pública. Se utiliza el lenguaje de programación Solidity para escribir los contratos. Su diseño de privacidad se basa en técnicas de privacidad en el nivel de protocolo y su descentralización se basa en el algoritmo de consenso DPoS.
+* Taiko: Los ZK-Rollups equivalentes a Ethereum, a veces llamados ZK-EVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
 
 * Scroll: Scroll es otra implementación de zk-EVM desarrollada por el equipo de Matter Labs. También se basa en el protocolo Rollup de Ethereum y se ejecuta en el algoritmo de consenso de prueba de estaca (PoS) de Ethereum 2.0. Scroll tiene un enfoque en la escalabilidad y la privacidad, y permite la creación de contratos privados y la ejecución de transacciones privadas en una red pública. También se utiliza el lenguaje de programación Solidity para escribir los contratos. Su diseño de privacidad se basa en técnicas de privacidad en el nivel de aplicación y su descentralización se basa en el algoritmo de consenso PoS
 
@@ -56,17 +56,33 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 ---
 # Taiko
 
+## Principios de Taiko
+
+Según los documentos oficiales de Taiko debajo de la capa 1 está la capa 0, la gente. Las cadenas de bloques son construidas por personas, y lo que les importa a estas personas se integra en el contrato social, en el código y en el diseño general. 
+
+Tenemos buenas razones para ceñirnos al ejemplo y la especificación de Ethereum; no es sólo por mero amor al protocolo y al pueblo. Es porque es el único ecosistema que nos da lo que nos importa y una oportunidad de cambiar el mundo para mejor, especialmente para aquellos que más lo necesitan. Esto suena elevado, pero esos son los objetivos de la comunidad Ethereum y de Taiko.
+
+A continuación, compartimos los principios de Taiko, tres principios básicos que nos guían.
+
+* Accesible: Cualquiera que quiera usar, desarrollar o participar en Taiko puede hacerlo. Este es el caso porque las tarifas de transacción son económicas y el rendimiento es alto; la experiencia del desarrollador es sólida y la migración de dapp de Ethereum es perfecta; la red no tiene permisos y reutiliza la infraestructura de Ethereum al máximo. No se puede tener libertad sin acceso.
+
+* Inclusivo: Taiko es resistente a la censura y no puede excluir grupos o individuos. El resumen está descentralizado: depende de Ethereum para la disponibilidad y seguridad de los datos; y sin permiso, lo que permite que cualquier participante, usuario o constructor de la red se suscriba. No hay roles especiales que puedan censurar usuarios/aplicaciones/transacciones. Solo estamos interesados ​​en construir sistemas justos y creíblemente neutrales.
+
+* Abierto: Taiko es completamente de código abierto y está centrado en la comunidad. Construimos sobre los hombros de gigantes y apreciamos contribuir de nuevo al progreso técnico y la comunidad de Ethereum. Valoramos las contribuciones de la comunidad al proyecto, aprovechando las mejores mentes e ideas que están interesadas en el espacio. El tipo de actividad que Taiko ejecuta y asegura exige transparencia.
+
+### Pruebas RCP
+
 Para agregar el RCP en Metamask ha resultado sencillo, aunque la experiencia ha sido manual, para ello deberemos de ir a Metamask, Redes y Agregar otras Redes. Puede consultar documentación oficial y como agregarla desde [aquí](https://taiko.xyz/docs/alpha-1-testnet/configure-wallet)
 
-### Faucet
+### Pruebas Faucet
 
 En Taiko para conseguir faucet podemos usar nuestro Twitter desde el link oficial y luego compartir nuestro enlace para verificar y recibir ETH de prueba. Nos valdrá el mismo twet para conseguir faucet en [L1](https://l1faucet.a1.taiko.xyz/) y en [L2](https://l2faucet.a1.taiko.xyz/).
 
-### Bridge
+### Pruebas Bridge
 
 Hemos enviado por el [Bridge Taiko](https://bridge.a1.taiko.xyz/) desde Ethereum A1 a Taiko A1 la cantidad de [0.05 ETH](https://l1explorer.a1.taiko.xyz/tx/0x61967b34488a16f5ef7a72f9c918d8b8185047aa6e24363f44c7994a4beaf467) (0.002646895244654985 Ether = 3.45 usd ) la cual hemos tenido que hacer un Claim para poder pagar los fee desde el cual me ha fallado 3 veces(https://l2explorer.a1.taiko.xyz/tx/0xff3746a3ba5c0ae61bab1aa56e3c471f35b466d8eb81d3ab561dbde1fff42108), a la cuarta le tripliqué el gas manual `3.000.000 gas limit` para probar y la transacción [se confirmó](https://l2explorer.a1.taiko.xyz/tx/0xc5897ae22b975b9564a576e785f7d70c44792b7df16019c6c134fdc869d68cb1) pero a un fee (0.002165108 Ether = 2.88 usd), que como podemos comprobar es muy diferente de los 8 usd que marcaba nuestra wallet.
 
-### Deploy
+### Pruebas Deploy
 
 El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Ethereum A1 como Taiko A1 concecutivamente sin tener ningun tipo de inconveniente..
 
@@ -77,7 +93,7 @@ El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambia
 * [Deploy Taiko A1](https://l2explorer.a1.taiko.xyz/tx/0x3fd68713a5a4f04468e09d89d608b0b6095e72d796b025dacf26b1e7808ae798)
 * [Token Contract L2](https://l2explorer.a1.taiko.xyz/token/0xA330cF7FDE4F9FE6E36c3909650C72362D360421/token-transfers)
 
-### Fee 
+### Pruebas Fee 
 
 Probamos a enviar desde Ethereum A1 entre wallets 500 L2Tai , el envio fue casi instantáneo y el fee (0.002030320255912087 Ether = 2.6 usd)
 
