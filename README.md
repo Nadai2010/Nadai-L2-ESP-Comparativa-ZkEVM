@@ -163,6 +163,8 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 * [Hash envio Scroll L2](https://l2scan.scroll.io/tx/0xf3e35b7e12b6b5788e059523e7b77707acc2cfcf8a62e6d202215a4dd6325395)
 
+![Graph](/im%C3%A1genes/scroll.png) ![Graph](/im%C3%A1genes/scroll2.png)
+
 ----
 
 <div align="left">
@@ -232,6 +234,8 @@ Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue cas
 * [Hash envio SczkEVM-Polygon](https://explorer.public.zkevm-test.net/tx/0xf2359dfc476a80a599e9d753a5d114900b9a77d87a2b35ab32f4cb82ef926403)
 
 
+![Graph](/im%C3%A1genes/pol.png) 
+
 ---
 
 <div align="left">
@@ -295,6 +299,7 @@ Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue ca
 
 * [Hash envio zkEVM-zkSync](https://goerli.explorer.zksync.io/tx/0x7bccce08efc978735e01b650af72f087f1b458a65b613a15e5e1c3cd2f87db07)
 
+![Graph](/im%C3%A1genes/sync.png)
 
 ----
 
