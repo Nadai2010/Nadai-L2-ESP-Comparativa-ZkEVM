@@ -162,8 +162,8 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 <div align="left">
   <h1 style="font-size: larger;">
-   <img src="imágenes/polygon.png" width="30">
-   <strong>   Zk-EVM-Polygon</strong> 
+   <img src="imágenes/polygon.png" width="25">
+   <strong>    Zk-EVM-Polygon        </strong> 
   </h1>
 </div>
 
