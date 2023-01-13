@@ -53,10 +53,9 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 
 <div align="left">
   <h1 style="font-size: larger;">
-  <img src="imágenes/Taiko.jpg" width="25">
-    <strong> Taiko</strong> 
+     <strong> 🥁 Taiko</strong> 
  </h1>
-</div>
+</div> 
 
 ## Principios de Taiko
 
