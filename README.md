@@ -104,7 +104,7 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 * [Hash envio Taiko A1](https://l2explorer.a1.taiko.xyz/tx/0x935172cdb25b9e93898d0c20a90e3ddd4b8e3e60de15e6573082fc048a7ff312)
 
-![Graph](/im%C3%A1genes/taiko.png) ![Graph](/im%C3%A1genes/taiko1.png)
+![Graph](/im%C3%A1genes/taiko.png) ![Graph](/im%C3%A1genes/taikoa1.png)
 
 ----
 
