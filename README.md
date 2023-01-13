@@ -108,7 +108,7 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 <div align="left">
   <h1 style="font-size: larger;">
-     <strong> 📜 Scroll/strong> 
+     <strong> 📜 Scroll </strong> 
  </h1>
 </div> 
 
