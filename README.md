@@ -53,9 +53,9 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 
 <div align="left">
   <h1 style="font-size: larger;">
+  <img src="imágenes/Taiko.jpg" width="25">
     <strong> Taiko</strong> 
-    <img src="imágenes/polygon.png" width="60">
-  </h1>
+ </h1>
 </div>
 
 ## Principios de Taiko
