@@ -1,18 +1,20 @@
 ## Zk-EVM
 
-Feliz año 2023, que mejor forma de empezar que con una comparación entre las Zk-EVM a modo usuario. Entre ellas compararemos Taiko, Scroll, ZkSync, Consensys y zk-EVM Polygon y como nos resulta la experiencia de acceder a estas tesnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como que tal ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde OpenZepelin Wizard y luego deployandolos en Remix.
+Feliz año 2023, que mejor forma de empezar que con una comparación entre las `Zk-EVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos Taiko, Scroll, ZkSync, Consensys y zk-EVM Polygon y como nos ha resultado la experiencia de acceder a estas tesnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZepelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
 
-Pero primero hablemos un poco sobre ella, la zk-EVM es una tecnología que permite la creación de contratos inteligentes privados en una cadena de bloques pública. Esto se logra mediante la utilización de criptografía zero-knowledge (zk) para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto.
+Pero primero hablemos un poco sobre ella, `la zk-EVM`, es una tecnología que permite la creación de contratos inteligentes privados en una cadena de bloques pública. Esto se logra mediante la utilización de criptografía zero-knowledge `(zk)`, para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto.
 
 Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una con sus propias características y ventajas. A continuación describiremos algunas de las implementaciones más conocidas:
 
-* Taiko: Los ZK-Rollups equivalentes a Ethereum, a veces llamados ZK-EVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
+* [Taiko:](https://taiko.xyz/) Los ZK-Rollups equivalentes a Ethereum, a veces llamados ZK-EVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
 
-* Scroll: Scroll es otra implementación de zk-EVM desarrollada por el equipo de Matter Labs. También se basa en el protocolo Rollup de Ethereum y se ejecuta en el algoritmo de consenso de prueba de estaca (PoS) de Ethereum 2.0. Scroll tiene un enfoque en la escalabilidad y la privacidad, y permite la creación de contratos privados y la ejecución de transacciones privadas en una red pública. También se utiliza el lenguaje de programación Solidity para escribir los contratos. Su diseño de privacidad se basa en técnicas de privacidad en el nivel de aplicación y su descentralización se basa en el algoritmo de consenso PoS
+* [Scroll:](https://scroll.io/) Scroll es otra implementación de zk-EVM desarrollada por el equipo de Matter Labs. La solución nativa de escalado zkEVM para Ethereum Scroll es un zkRollup basado en zk-EVM en Ethereum que permite la compatibilidad nativa para las aplicaciones y herramientas de Ethereum existentes.
+
+* [zkEVM-Polygon:](https://polygon.technology/solutions/polygon-zkevm) La zk-EVM-Polygon es una implementación de zk-EVM desarrollada por el equipo de Polygon. Es la una solución de escalado de conocimiento cero `(ZK)`, que es totalmente compatible con Ethereum. Todos los contratos inteligentes, herramientas de desarrollo y billeteras existentes funcionan a la perfección. El zkEVM aprovecha el poder de las pruebas ZK para reducir el costo de transacción y aumentar enormemente el rendimiento, todo mientras hereda la seguridad de Ethereum L1.
 
 * ZkSync2.0: ZkSync es una implementación de zk-EVM desarrollada por el equipo de Matter Labs. Se basa en el protocolo Rollup de Ethereum y se ejecuta en el algoritmo de consenso de prueba de estaca (PoS) de Ethereum 2.0. ZkSync tiene un enfoque en la escalabilidad y la privacidad, y permite la creación de contratos privados y la ejecución de transacciones privadas en una red pública. También se utiliza el lenguaje de programación Solidity para escribir los contratos. Su diseño de privacidad se basa en técnicas de privacidad en el nivel de protocolo y su descentralización se basa en el algoritmo de consenso PoS
 
-* zkEVM-Polygon: zkEVM-Polygon es una implementación de zk-EVM desarrollada por el equipo de Polygon. Se basa en el protocolo Rollup de Ethereum y se ejecuta en el algoritmo de consenso de prueba de participación delegada (DPoS) de Polygon. zkEVM-Polygon permite la creación de contratos privados y la ejecución de transacciones privadas en una red pública. También se utiliza el lenguaje de programación Solidity para escribir los contratos. Su diseño de privacidad se basa en técnicas de privacidad en el nivel de protocolo y su descentralización se basa en el algoritmo de consenso DPoS.
+
 
 * ConsenSys Diligence: Es una implementación de zk-EVM desarrollada por ConsenSys. Está diseñada para proporcionar privacidad y cumplimiento normativo para las organizaciones. Su diseño de privacidad se basa en técnicas de privacidad en el nivel de protocolo y su descentralización se basa en el algoritmo de consenso PoS
 
@@ -64,11 +66,11 @@ Tenemos buenas razones para ceñirnos al ejemplo y la especificación de Ethereu
 
 A continuación, compartimos los principios de Taiko, tres principios básicos que nos guían.
 
-* Accesible: Cualquiera que quiera usar, desarrollar o participar en Taiko puede hacerlo. Este es el caso porque las tarifas de transacción son económicas y el rendimiento es alto; la experiencia del desarrollador es sólida y la migración de dapp de Ethereum es perfecta; la red no tiene permisos y reutiliza la infraestructura de Ethereum al máximo. No se puede tener libertad sin acceso.
+1. Accesible: Cualquiera que quiera usar, desarrollar o participar en Taiko puede hacerlo. Este es el caso porque las tarifas de transacción son económicas y el rendimiento es alto; la experiencia del desarrollador es sólida y la migración de dapp de Ethereum es perfecta; la red no tiene permisos y reutiliza la infraestructura de Ethereum al máximo. No se puede tener libertad sin acceso.
 
-* Inclusivo: Taiko es resistente a la censura y no puede excluir grupos o individuos. El resumen está descentralizado: depende de Ethereum para la disponibilidad y seguridad de los datos; y sin permiso, lo que permite que cualquier participante, usuario o constructor de la red se suscriba. No hay roles especiales que puedan censurar usuarios/aplicaciones/transacciones. Solo estamos interesados ​​en construir sistemas justos y creíblemente neutrales.
+2. Inclusivo: Taiko es resistente a la censura y no puede excluir grupos o individuos. El resumen está descentralizado: depende de Ethereum para la disponibilidad y seguridad de los datos; y sin permiso, lo que permite que cualquier participante, usuario o constructor de la red se suscriba. No hay roles especiales que puedan censurar usuarios/aplicaciones/transacciones. Solo estamos interesados ​​en construir sistemas justos y creíblemente neutrales.
 
-* Abierto: Taiko es completamente de código abierto y está centrado en la comunidad. Construimos sobre los hombros de gigantes y apreciamos contribuir de nuevo al progreso técnico y la comunidad de Ethereum. Valoramos las contribuciones de la comunidad al proyecto, aprovechando las mejores mentes e ideas que están interesadas en el espacio. El tipo de actividad que Taiko ejecuta y asegura exige transparencia.
+3. Abierto: Taiko es completamente de código abierto y está centrado en la comunidad. Construimos sobre los hombros de gigantes y apreciamos contribuir de nuevo al progreso técnico y la comunidad de Ethereum. Valoramos las contribuciones de la comunidad al proyecto, aprovechando las mejores mentes e ideas que están interesadas en el espacio. El tipo de actividad que Taiko ejecuta y asegura exige transparencia.
 
 ### Pruebas RCP
 
@@ -105,20 +107,37 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 ----
 
+# Scroll
 
-# Scroll 
+## Principios de Scroll
+
+Según uno de los [documentos oficiales de Scroll](https://scroll.io/blog/technicalPrinciples#heading-2), se basan en escalar Ethereum con su zkRollup basado en zkEVM, han diseñado Scroll basado en un conjunto de principios técnicos que defienden los valores fundamentales de Scroll. 
+
+1. Garantizar la seguridad del usuario: En el contexto de las soluciones de escalado de blockchain, la forma más importante de seguridad se refiere a la integridad de los fondos y datos de los usuarios. Si bien una solución de escalado puede ofrecer a los usuarios capacidades adicionales, creemos que garantizar que los usuarios mantengan el acceso a sus fondos es lo primero. Para Scroll, esto significa que los usuarios no deberían depender de la honestidad de los nodos de la Capa 2 para la seguridad y, en su lugar, pueden aprovechar la seguridad total de la Capa 1 incluso cuando realizan transacciones en la Capa 2. Al desarrollar Ethereum de acuerdo con este principio, estamos arraigando el seguridad de Scroll en el consenso más seguro y descentralizado de la capa base de Ethereum.
+
+2. Mantener la equivalencia EVM: Además de brindarles a los usuarios capacidades adicionales, una solución de escalado de Ethereum efectiva debería brindarles a los usuarios y desarrolladores una ruta de migración sin inconvenientes desde las dapps existentes y las herramientas para desarrolladores. Creemos que mantener la equivalencia EVM es la mejor manera de lograrlo. Un entorno equivalente a EVM se comporta exactamente igual que la especificación de la máquina virtual de Ethereum en el documento amarillo de Ethereum . Esto significa que los usuarios y desarrolladores pueden migrar sin cambios de código adicionales, auditorías costosas o cambios disruptivos en su flujo de trabajo de desarrollo.
+
+La equivalencia de EVM proporciona garantías sustancialmente más sólidas que la simple compatibilidad con EVM a través de soluciones como la transpilación. Conformarse con la mera compatibilidad puede obligar a los usuarios y desarrolladores a modificar o incluso reimplementar por completo grandes porciones de la infraestructura de soporte de Ethereum. Además, mantener la seguridad se vuelve mucho más difícil sin la equivalencia de EVM. Como resultado, para ser lo más fácil posible para el desarrollador y el usuario, `Scroll es equivalente a EVM, no simplemente compatible con EVM.`
+
+3. Eficiencia: Para que los usuarios disfruten de una gran experiencia en una Capa 2, creemos que las tarifas de transacción deben ser bajas, órdenes de magnitud más baratas que en la capa base. Los usuarios deberían experimentar una confirmación previa instantánea en la Capa 2 y una finalización razonablemente rápida en la capa base (Ethereum en nuestro caso).
+
+Si bien estas condiciones son fáciles de satisfacer con un operador centralizado, para preservar la seguridad deben seguir manteniéndose en un entorno descentralizado. En el contexto de la Capa 2, creemos que Scroll debe ser lo más eficiente posible mientras mantiene la seguridad del usuario y la descentralización tanto en la Capa 2 como en la capa base.
+
+4. Descentralización en todas las capas de la comunidad: La descentralización es una propiedad central de las cadenas de bloques que a menudo se pasa por alto o se intercambia de manera inadecuada por eficiencia. Creemos que es uno de los aspectos más valiosos de las cadenas de bloques y garantiza que los protocolos y las comunidades sean vibrantes y resistentes frente a la censura o los ataques coordinados. Consideramos la descentralización en muchos aspectos de Scroll, incluidos los operadores de nodos, los probadores y la comunidad de desarrolladores y usuarios. Al construir abiertamente con la comunidad y trazar un camino creíble para descentralizar tanto la prueba como la secuenciación, Scroll se compromete a garantizar la descentralización en todas las dimensiones.
+
+### Pruebas RCP
 
 Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido automática y sólo deberemos darle a `add Metamask` desde los [documentos oficiales](https://scroll.io/prealpha/), el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada [Scroll](https://scroll.io/) en nuestra billetera.
 
-### Faucet
+### Pruebas Faucet
 
 En Scroll para conseguir faucet en L1 tendremos que ir su página de [Faucet](https://scroll.io/prealpha/faucet), verificar un captcha, poner nuestra wallet para recibir `1 ETH` y `100 TSUSDC` de prueba. Para L2 no hay faucet, así que se debe usar el bridge para recibir nuestros tokens en L2.
 
-### Bridge
+### Pruebas Bridge
 
 Hemos enviado por el [Bridge Scroll](https://scroll.io/prealpha/bridge) desde Scroll L1 a Scroll L2 la cantidad de [0.5 ETH](https://l1scan.scroll.io/tx/0xdfe42a882b64023047260de6207669c86e9aa7a4bb58370d96ebc485c71b492c) (0.000173922000927584 Ether = 0.22 usd ), todo ha sido en un solo paso sin tener que interactuar desde L2.
 
-### Deploy
+### Pruebas Deploy
 
 El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Scroll Testnet L1 como Scroll Testnet L2 concecutivamente sin tener ningun tipo de inconveniente.
 
@@ -129,7 +148,7 @@ El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambia
 * [Deploy  Scroll Testnet L2](https://l2scan.scroll.io/tx/0x44b01b272fab0360c9465a5dfc5be95cf4eb2b5ea4072446880c6ec82f9fd35c)
 * [Token Contract L2](https://l2scan.scroll.io/token/0xA330cF7FDE4F9FE6E36c3909650C72362D360421/token-transfers)
 
-### Fee 
+### Pruebas Fee
 
 Probamos a enviar desde Scroll L1 entre wallets 500 L2Sco , el envio fue casi instantáneo y el fee (0.000078316500417688 Ether = 0.10 usd)
 
@@ -143,27 +162,61 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 
 # Zk-EVM-Polygon 
 
+## Principios de zk-EVM Polygon
+
+Según los [documentos oficiales de Zk-EVM Polygon](https://polygon.technology/solutions/polygon-zkevm/) se basan en una solución de escalabilidad de Ethereum Layer 2 descentralizada que utiliza tecnología criptográfica de conocimiento cero `(zk)` para proporcionar validación y finalización rápida de los cálculos de transacciones fuera de la cadena. Ha sido diseñado y desarrollado para emular la máquina virtual de Ethereum (EVM) al recrear todos los códigos de operación de EVM existentes para una implementación transparente de los contratos inteligentes de Ethereum existentes.
+
+1. Equivalente a EVM: Ethereum no es solo una cadena de bloques. Es un rico ecosistema de contratos inteligentes, herramientas para desarrolladores, infraestructura y billeteras. Es una comunidad vibrante de desarrolladores, auditores y usuarios. La mejor manera de escalar Ethereum es mantener la compatibilidad con este ecosistema, y ​​zkEVM brindará a los usuarios y desarrolladores una experiencia idéntica a Ethereum L1, solo que con una mejora masiva de escalabilidad.
+
+2. Rendimiento: Muchas personas en criptografía creían que un zkEVM estaba a años de distancia y que tal vez nunca fuera práctico o competitivo con otros ZK L2. Esto se enmarcó como una compensación inevitable: podríamos tener compatibilidad total con EVM o alto rendimiento, pero no ambos. Sin embargo, con los avances en los sistemas de prueba promovidos por Polygon Zero, podemos lograr una compatibilidad total con EVM al mismo tiempo que ofrecemos un mejor rendimiento (mayor rendimiento, menor latencia y menor costo) que algunas L1, resúmenes optimistas y otros resúmenes ZK.
+
+El zkEVM lleva a cabo cambios de estado, que provienen de ejecuciones de transacciones de capa 2 de Ethereum que los usuarios envían a la red y, posteriormente, produce pruebas de validez que atestiguan la exactitud de los cálculos de cambio de estado realizados fuera de la cadena.
+
+Aunque adoptar este enfoque de diseño revolucionario fue una decisión difícil de tomar, el objetivo es minimizar la fricción de los usuarios y las dApps al usar la solución. Es un enfoque que requiere la recreación de todos los códigos de operación EVM para el despliegue transparente de los contratos inteligentes de Ethereum existentes. Para este propósito, el equipo ha creado y diseñado un nuevo conjunto de tecnologías y herramientas.
+
+Hablemos ahora de [Hermez](https://docs.hermez.io/Hermez_1.0/about/scalability/) y algunos de sus principios:
+
+1. Descentralizado: Se denomina red porque el modelo está descentralizado de forma nativa. Es una construcción de capa 2 y tiene la intención de realizar transacciones a miles por segundo, por lo que el algoritmo de consenso debe ser simple para que un agente (coordinador) procese esta cantidad de transacciones en un momento dado. Con este modelo, aún mantiene las propiedades de no tener permiso para participar y resistir la censura para las transacciones de los usuarios.
+
+2. Eficiente: El modelo descentralizado se implementa a través de un sistema de subasta sin permiso para que los posibles coordinadores de la red obtengan el derecho de procesar transacciones durante un período de tiempo. Este modelo de subasta incentiva la eficiencia de los coordinadores ya que necesitan procesar tantas transacciones como puedan para cobrar las tarifas y compensar su inversión y sus gastos de operación (y ganar dinero con ello).
+
+Hermez implementa un ZK-Rollup basado en pruebas ZK-SNARK, el más eficiente en términos de costo por lotes en Ethereum.
+Dado que los lotes de transacciones tienen un tamaño máximo de 2000, los usuarios se beneficiarán de la escala y la tecnología subyacente para lograr ahorros nominales máximos de hasta el 97 % en comparación con el costo de Ethereum para una sola transferencia de token.
+
+3. Seguridad en mente: La escalabilidad se puede lograr de diferentes maneras. Hermez es una construcción de capa 2 porque aprovecha Ethereum no solo mediante el uso de sus tokens nativos, sino también tomando prestada la seguridad de Ethereum como una fuerte cadena de bloques pública.
+
+La implementación de Hermez se basa en la tecnología propia de iden3 (bibliotecas Circom y SnarkJS) y la tecnología criptográfica que ha demostrado ser la más robusta hasta el momento, tal como se utiliza en la cadena de bloques ZCash. Como una red nueva con un período de arranque, Hermez tiene medidas de seguridad transitorias para proteger el sistema con el objetivo de eliminarlas y dejarlo completamente descentralizado.
+
+4. Parte de la comunidad: Hermez está diseñado para contribuir con la comunidad, ya que el proyecto no sería posible sin él. Las innovaciones en escalabilidad son una rara oportunidad para realinear los incentivos en torno a la comunidad y los bienes públicos que brindan.
+
+El 40% del valor generado en la red será enviado a un proceso de donación donde los proyectos del ecosistema se beneficiarán de las donaciones. Comenzará con Gitcoin, pero es posible que se habiliten otros grupos en el futuro. Hermez abrirá el código fuente de todo el protocolo y el código coordinador, está abierto a contribuciones y se ha comprometido a contribuir a la creación de un ecosistema L2 para iniciativas como una mejor interoperabilidad L2.
+
+5. Enfocado en la Usabilidad: ZK-Rollups proporciona la tecnología para la finalización instantánea de las transacciones, lo que Hermez entiende que es una característica clave para la usabilidad.
+
+El Protocolo Hermez también proporciona una garantía de que las transacciones de los usuarios no se pueden censurar y que todos los fondos siempre se pueden enviar de vuelta a la capa 1. Las soluciones de la capa 2 aumentan la complejidad para los usuarios, pero el enfoque del proyecto Hermez es proporcionar la mejor usabilidad posible para la incorporación de usuarios. 
+
+### Pruebas RCP
 Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido tanto manual como automática y sólo deberemos seguir los pasos [Oficiales Manueales](https://wiki.polygon.technology/docs/zkEVM/develop/#connecting-to-zkevm) o [Oficiales Automática](https://public.zkevm-test.net/) y le damos directamente `add Metamask`, el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada la red, también puede seguir la guía oficial desde el equipo de [Zk-EVM-Polygon](https://polygon.technology/blog/your-three-step-guide-to-using-polygon-zkevm-yes-its-that-easy).
 
-### Faucet
+### Pruebas Faucet
 
 En zkEVM Polygon para conseguir faucet podemos usar directamente cualquiera de Goerli, aquí os dejamos algunos de ellos pero si quieres tenerlos todos desde un sólo sitio te recomiendo visitar y probar [Faucet Link](https://faucetlink.to/goerli), en el también podrá ver una compartiva de los procedimientos para poder reclamar los `ETH` de prueba.
 
 * [Faucet Alchemy](https://goerlifaucet.com/)
 * [Faucet Mudit](https://goerli-faucet.mudit.blog/)
 
-### Bridge
+### Pruebas Bridge
 
 Hemos enviado por el [Bridge zkEVM-Polygon](https://public.zkevm-test.net/) desde Goerli L1 a testnet-zkEVM-mago, la cantidad de [0.01 ETH](https://goerli.etherscan.io/tx/0xe95f6ef795215f402327abc2748842ac8070dfbed4fc47362ba78b975e1db18b) (0.002206758437339412 Ether = 2.86 usd ). Luego deberemos cambiar a nuestra nueva red de zkEVM-Polygon y [SÓLO aceptar el envío sin fee](https://explorer.public.zkevm-test.net/tx/0x351e744c9957a77a0c9e962fcd8000ef6ba48ea2e8023aa3cbe3c10d4c9cca59)(0 Ether = 0 usd) 
 
-### Deploy
+### Pruebas Deploy
 
 El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de zkEVM-Polygon sin tener ningun tipo de inconveniente.
 
 * [Deploy  zkEVM-Polygon](https://explorer.public.zkevm-test.net/tx/0x52cf30f4289cdf5331f116bdb55ca1f63cc4571799616bd97ab431cfbacf7932)
 * [Token Contract](https://explorer.public.zkevm-test.net/token/0xE391fC071fc166953502E6368B7FE713691A9B79/token-transfers)
 
-### Fee
+### Pruebas Fee
 
 Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue casi instantáneo y el fee (0.000052211 Ether = 0.07 usd)
 
