@@ -3,6 +3,14 @@
   <strong>¿Qúe son las Zk-EVM? </strong> 
   </h1>
 </div>
+<div align="center">
+  <h1 style="font-size: larger;">
+   <img src=imágenes/evm.gif width="150">
+   <img src=imágenes/evm.gif width="150">
+   <img src=imágenes/evm.gif width="150">
+   <img src=imágenes/evm.gif width="150">
+  </h1>
+</div>
  
 Feliz año 2023, que mejor forma de empezar que con una comparación entre las `Zk-EVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos Taiko, Scroll, ZkSync, Consensys y zk-EVM Polygon y como nos ha resultado la experiencia de acceder a estas tesnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZepelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
 
@@ -25,6 +33,28 @@ Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una co
 Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy nuevas y se encuentran en una fase temprana de desarrollo, por lo que todavía se requiere más investigación y desarrollo antes de poder determinar si son viables a largo plazo. Por lo que decidimos empezar a testearla y compartir los resultados. Siempre tener en cuenta que los costes obtenidos pueden variar dependiendo de congestión de red, linea de tiempo distinta para pruebas, competencia entre los validadores u otras datos aunque se han hecho cogiendo la media de las últimas 25 páginas de transacciones para tener algo más aproximado sobre la actividad de cada red, también hemos apreciado que algunos calculos de `USD` en `Metamask` son **INCORRECTOS**, por lo que los cálculos están directos de las transacciones en la siguiente tabla.
 
 ![Graph](/im%C3%A1genes/Tabla.png)
+
+```bash
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                              COMPARATIVA ENTRE ZK-EVM 2.0                                      ║ 
+╠═══════════════╦══════════╦═══════════════╦══════════════════╦══════════════╦══════════════╦══════════╦═════════╣
+║     ZK-EVM    ║    RCP   ║     FAUCET    ║       BRIDGE     ║   WHITELIST  ║  EXPLORADOR  ║  DEPLOY  ║   FEE   ║ 
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╬═════════╣
+║   SCROLL L1   ║   AUTO   ║ TWITTER-FAST  ║ EN 1 PASO  -GOOD ║      NO      ║ 30-40 TX/BLQ ║  FÁCIL   ║ 0.10 USD║      
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╬═════════╣
+║   SCROLL L2   ║   AUTO   ║ TWITTER-FAST  ║ EN 1 PASO  -SLOW ║      NO      ║  5-20 TX/BLQ ║  FÁCIL   ║ 0.15 USD║ 
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╬═════════╣
+║ ZKEVM-POLYGON ║ MAN-AUTO ║  ETH GOERLI   ║ EN 2 PASOS -GOOD ║      NO      ║   1   TX/BLQ ║  FÁCIL   ║ 0.07 USD║ 
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
+║    TAIKO L1   ║  MANUAL  ║ CAPTCHA-FAST  ║*EN 2 PASOS -REGUL║      NO      ║ 40-60 TX/BLQ ║  FÁCIL   ║ 2.6  USD║ 
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
+║    TAIKO L2   ║  MANUAL  ║    SOLO L1    ║ EN 2 PASOS -SLOW ║      NO      ║  1-5  TX/BLQ ║  FÁCIL   ║ 0.15 USD║ 
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
+║  ZK-SYNC 2.0  ║ MAN-AUTO ║ TWITTER-SLOW  ║ EN 1 PASO  -GOOD ║      NO      ║  1-3  TX/BLQ ║  HARD    ║ 0.48 USD║ 
+╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
+║   CONSENSYS   ║ *        ║               ║                  ║*SI-RCP INFURA║  1-3  TX/BLQ ║ 
+╚═══════════════╩══════════╩═══════════════╩══════════════════╩══════════════╩══════════════╩══════════╩═════════╝
+```
 
 * `RCP`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido la forma de agregar que hemos encontrado oficialmente.
 * `Faucet`: Es un servicio que permite obtener fondos gratuitos para probar la red y puede variar dependiendo de la implementación de zk-EVM. Hemos agregado el tipo de verificación necesaria para recibirlos.
@@ -155,7 +185,7 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 <div align="left">
   <h1 style="font-size: larger;">
    <img src="imágenes/polygon.png" width="25">
-   <strong>Zk-EVM-Polygon</strong> 
+   <strong>    Zk-EVM-Polygon        </strong> 
   </h1>
 </div>
 
@@ -226,7 +256,7 @@ Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue cas
 <div align="left">
   <h1 style="font-size: larger;">
    <img src="imágenes/zksync.png" width="25">
-   <strong>Zk-Sync 2.0</strong> 
+   <strong>    Zk-Sync 2.0        </strong> 
   </h1>
 </div>
 
@@ -280,7 +310,7 @@ El deploy ha sido complejo, no nos vale con simple copia y pega en remix y algun
 
 ### Pruebas Fee
 
-Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue casi instantáneo y el fee (0.0003730602 ETH = 0,481 usd)
+Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue casi instantáneo y el fee (0.0003730602 ETH = 0,481 usd).
 
 * [Hash envio zkEVM-zkSync](https://goerli.explorer.zksync.io/tx/0x7bccce08efc978735e01b650af72f087f1b458a65b613a15e5e1c3cd2f87db07)
 
