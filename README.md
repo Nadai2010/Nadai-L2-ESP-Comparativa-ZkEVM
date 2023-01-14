@@ -306,9 +306,9 @@ Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue ca
 
 ----
 
-# Consensys
+# ConsenSys zkEVM
 
-## Principios de ConsenSys 
+## Principios de ConsenSys zkEVM
 
 La red [ConsenSys zkEVM](https://goerli.zkevm.consensys.net/) es un nuevo zk-rollup, diseñado por ConsenSys R&D y operado por ConsenSys. El paquete acumulativo es la culminación de años de investigación y ofrece compatibilidad total con Ethereum Virtual Machine (EVM), por lo que los desarrolladores pueden implementar y administrar aplicaciones usando herramientas familiares como MetaMask, Truffle e Infura como si estuvieran usando Ethereum directamente. 
 
@@ -319,5 +319,6 @@ La nueva red de prueba beta privada ConsenSys zkEVM, equivalente a EVM, ya está
 Así que aquí seguimos a la espera, en lo que hemos realizados pruebas, deploy, artículo...esta red de prueba privada aún no nos ha dado acceso para testearla, por lo que ya la analizaremos más adelante.
 
 ---
+### Agradecimientos
 
 Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zk-EVM o que no se les hizo demasiado aburrido el documento 😂 😂, con él hemos querido reforzar el poder de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
