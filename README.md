@@ -2,13 +2,15 @@
 
 Feliz año 2023, que mejor forma de empezar que con una comparación entre las `Zk-EVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos Taiko, Scroll, ZkSync, Consensys y zk-EVM Polygon y como nos ha resultado la experiencia de acceder a estas tesnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZepelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
 
-Pero primero hablemos un poco sobre ella, `la zk-EVM`, es una máquina virtual compatible con `EVM` (Ethereum Virtual Machine) que admite el cálculo de prueba de conocimiento cero `(zk)`, para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto. A diferencia de las máquinas virtuales regulares, un zkEVM prueba la corrección de la ejecución del programa, incluida la validez de las entradas y salidas utilizadas en la operación
+Pero primero hablemos un poco sobre ella, `la zk-EVM`, es una máquina virtual compatible con `EVM` (Ethereum Virtual Machine) que admite el cálculo de prueba de conocimiento cero `(zk)`, para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto. A diferencia de las máquinas virtuales regulares, un zkEVM prueba la corrección de la ejecución del programa, incluida la validez de las entradas y salidas utilizadas en la operación.
+
+![Graph](/im%C3%A1genes/zkemv.png)
 
 Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una con sus propias características y ventajas. A continuación describiremos algunas de las implementaciones más conocidas:
 
 * [Taiko:](https://taiko.xyz/) Los ZK-Rollups equivalentes a Ethereum, a veces llamados ZK-EVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
 
-* [Scroll:](https://scroll.io/) Scroll es otra implementación de zk-EVM desarrollada por el equipo de Matter Labs. La solución nativa de escalado zkEVM para Ethereum Scroll es un zkRollup basado en zk-EVM en Ethereum que permite la compatibilidad nativa para las aplicaciones y herramientas de Ethereum existentes.
+* [Scroll:](https://scroll.io/) Scroll es otra implementación de zk-EVM. La solución nativa de escalado zkEVM para Ethereum Scroll es un zkRollup basado en zk-EVM en Ethereum que permite la compatibilidad nativa para las aplicaciones y herramientas de Ethereum existentes.
 
 * [zkEVM-Polygon:](https://polygon.technology/solutions/polygon-zkevm) La zk-EVM-Polygon es una implementación de zk-EVM desarrollada por el equipo de Polygon. Es la una solución de escalado de conocimiento cero `(ZK)`, que es totalmente compatible con Ethereum. Todos los contratos inteligentes, herramientas de desarrollo y billeteras existentes funcionan a la perfección. El zkEVM aprovecha el poder de las pruebas ZK para reducir el costo de transacción y aumentar enormemente el rendimiento, todo mientras hereda la seguridad de Ethereum L1.
 
@@ -16,7 +18,7 @@ Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una co
 
 * [ConsenSys zkEVM:](https://goerli.zkevm.consensys.net/) Es una implementación de zk-EVM desarrollada por ConsenSys, es una máquina virtual Ethereum de conocimiento cero `(ZK)` de tipo 2. Un zkEVM replica el entorno de Ethereum como un paquete acumulativo y permite a los desarrolladores desarrollarlo como lo harían en la red principal de Ethereum. La red ConsenSys zkEVM le permite implementar cualquier contrato inteligente, usar cualquier herramienta y desarrollar como si estuviera construyendo en Ethereum. Para los usuarios, esto permite la experiencia y las garantías de seguridad de Ethereum, pero con costos de transacción más bajos.
 
-Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy nuevas y se encuentran en una fase temprana de desarrollo, por lo que todavía se requiere más investigación y desarrollo antes de poder determinar si son viables a largo plazo. Por lo que decidimos empezar a testearla y compartir los resultados. Siempre tener en cuenta que los costes obtenidos pueden variar dependiendo de congestión de red, linea de tiempo distinta para pruebas, competencia entre los validadores u otras datos aunque se han hecho cogiendo la media de las últimas 25 páginas de transacciones para tener algo más aproximado, también hemos apreciado que algunos calculos de `USD` en `Metamask` son **INCORRECTO**, por lo que los cálculos estan directos de las transacciones en la siguiente tabla.
+Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy nuevas y se encuentran en una fase temprana de desarrollo, por lo que todavía se requiere más investigación y desarrollo antes de poder determinar si son viables a largo plazo. Por lo que decidimos empezar a testearla y compartir los resultados. Siempre tener en cuenta que los costes obtenidos pueden variar dependiendo de congestión de red, linea de tiempo distinta para pruebas, competencia entre los validadores u otras datos aunque se han hecho cogiendo la media de las últimas 25 páginas de transacciones para tener algo más aproximado sobre la actividad de cada red, también hemos apreciado que algunos calculos de `USD` en `Metamask` son **INCORRECTO**, por lo que los cálculos están directos de las transacciones en la siguiente tabla.
 
 
 ```bash
@@ -77,7 +79,7 @@ Para agregar el RCP en Metamask ha resultado sencillo, aunque la experiencia ha 
 
 ### Pruebas Faucet
 
-En Taiko para conseguir faucet podemos usar nuestro Twitter desde el link oficial y luego compartir nuestro enlace para verificar y recibir ETH de prueba. Nos valdrá el mismo twet para conseguir faucet en [L1](https://l1faucet.a1.taiko.xyz/) y en [L2](https://l2faucet.a1.taiko.xyz/).
+En Taiko para conseguir faucet podemos usar nuestro Twitter desde el link oficial y luego compartir nuestro enlace para verificar y recibir ETH de prueba. Nos valdrá el mismo tweet para conseguir faucet en [L1](https://l1faucet.a1.taiko.xyz/) y en [L2](https://l2faucet.a1.taiko.xyz/).
 
 ### Pruebas Bridge
 
@@ -144,7 +146,7 @@ Hemos enviado por el [Bridge Scroll](https://scroll.io/prealpha/bridge) desde Sc
 
 ### Pruebas Deploy
 
-El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Scroll Testnet L1 como Scroll Testnet L2 concecutivamente sin tener ningun tipo de inconveniente.
+El deploy ha sido desde Remix y no ha habido ninguna complicación, sólo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Scroll Testnet L1 como Scroll Testnet L2 concecutivamente sin tener ningun tipo de inconveniente.
 
 
 * [Deploy  Scroll Testnet L1](https://l1scan.scroll.io/tx/0xdfadf91159cf13fa6e3466cf541ec2b464df7232bfc3f772c8631a8bc48dea50)
