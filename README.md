@@ -308,15 +308,15 @@ Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue ca
 
 # Consensys
 
-Agregar RCP en MM desde aquí, pero hay que crear rcp desde infura, registrarse y pedir el whitlis, luego añadir su api key
+## Principios de ConsenSys 
 
-https://consensys.net/docs/zk-evm/en/latest/get-started/configure-metamask/
+La red [ConsenSys zkEVM](https://goerli.zkevm.consensys.net/) es un nuevo zk-rollup, diseñado por ConsenSys R&D y operado por ConsenSys. El paquete acumulativo es la culminación de años de investigación y ofrece compatibilidad total con Ethereum Virtual Machine (EVM), por lo que los desarrolladores pueden implementar y administrar aplicaciones usando herramientas familiares como MetaMask, Truffle e Infura como si estuvieran usando Ethereum directamente. 
 
-https://goerli.zkevm.consensys.net/
+Los usuarios podrán unir activos entre la red de prueba de Goerli y zkEVM para probar sus contratos inteligentes y dapps utilizando las herramientas, la infraestructura y las billeteras con las que están familiarizados. La integración lista para usar con la cadena de herramientas de Ethereum existente permite la experiencia, la seguridad y la descentralización de Ethereum pero con tarifas de transacción ultrabajas. 
 
-https://www.infura.io/resources/network/consensys-zkevm-beta-signup
+La nueva red de prueba beta privada ConsenSys zkEVM, equivalente a EVM, ya está disponible en Infura para los solicitantes seleccionados. Los participantes de Testnet podrán unir activos entre Goerli testnet y zkEVM para probar sus contratos inteligentes, dapps utilizando las herramientas, la infraestructura y las billeteras con las que están familiarizados. La integración lista para usar con las herramientas Ethereum existentes permite la experiencia, la seguridad y la descentralización de Ethereum pero con tarifas de transacción ultrabajas.  
 
-Y esperar a que te acpeten 
+Así que aquí seguimos a la espera, en lo que hemos realizados pruebas, deploy, artículo...esta red de prueba privada aún no nos ha dado acceso para testearla, por lo que ya la analizaremos más adelante.
 
 ---
 
