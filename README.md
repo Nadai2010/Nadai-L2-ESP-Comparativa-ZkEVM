@@ -1,10 +1,7 @@
 <div align="center">
   <h1 style="font-size: larger;">
+   <img src=imágenes/evm.gif width="80">
   <strong>¿Qúe son las Zk-EVM? </strong> 
-  </h1>
-</div>
-<div align="center">
-  <h1 style="font-size: larger;">
    <img src=imágenes/evm.gif width="80">
   </h1>
 </div>
