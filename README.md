@@ -43,13 +43,13 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 ╚═══════════════╩══════════╩═══════════════╩══════════════════╩══════════════╩══════════════╩══════════╩═════════╝
 
 ```
-* `RCP`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zk-EVM.
-* `Faucet`: Es un servicio que permite obtener fondos gratuitos para probar la red y puede variar dependiendo de la implementación de zk-EVM.
-* `Bridge`: es un servicio que permite conectar dos o mas redes blockchain y puede variar dependiendo de la implementación de zk-EVM. 
-* `Whitelist:` es un mecanismo de seguridad que permite especificar un conjunto de direcciones de billetera autorizadas para realizar transacciones en un contrato inteligente o en una red blockchain
-* `Explorador:` Es una herramienta que permite ver el estado actual de la red y puede variar dependiendo de la implementación de zk-EVM.
-* `Deploy:` Es el proceso de desplegar un contrato en la red y puede variar dependiendo de la implementación de zk-EVM.
-* `Fee:` Es el costo de transacción y puede variar dependiendo de la congestión de la red y la competencia entre los validadores.
+* `RCP`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido la forma de agregar que hemos encontrado oficialmente.
+* `Faucet`: Es un servicio que permite obtener fondos gratuitos para probar la red y puede variar dependiendo de la implementación de zk-EVM. Hemos agregado el tipo de verificación necesaria para recibirlos.
+* `Bridge`: Es un servicio que permite conectar dos o mas redes blockchain y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido los pasos necesarios en cada bridge, asi como su velocidad y facilidad en el proceso.
+* `Whitelist:` Es un mecanismo de seguridad que permite especificar un conjunto de direcciones de billetera autorizadas para realizar transacciones en un contrato inteligente o en una red blockchain. Hemos añadido las whitelist, el `*` hace referencia a un registro y autorización previo de ConSensys para poder acceder a la API de infura y poder añadir el RCP.
+* `Explorador:` Es una herramienta que permite ver el estado actual de la red y puede variar dependiendo de la implementación de zk-EVM. Hemos medido la actividad de transacciones por bloques, tiempo y precios decada red.
+* `Deploy:` Es el proceso de desplegar un contrato en la red y puede variar dependiendo de la implementación de zk-EVM. Hemos evaluado los que han sido completamente igual que en `ETH`, y los que no sha resultado más complejo.
+* `Fee:` Es el costo de transacción y puede variar dependiendo de la congestión de la red y la competencia entre los validadores. Hemos anotado la cantidad de Fee de una transacción de enviar `500 Token ERC20` deployados en cada red a otra wallet.
 
 ---
 
@@ -317,3 +317,6 @@ https://www.infura.io/resources/network/consensys-zkevm-beta-signup
 
 Y esperar a que te acpeten 
 
+---
+
+Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zk-EVM o que no se les hizo demasiado aburrido el documento 😂 😂, con él hemos querido reforzar el poder de de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
