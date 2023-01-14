@@ -248,7 +248,7 @@ Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue cas
   </h1>
 </div>
 
-## Principios Zk-Sync 2.0
+## Principios de Zk-Sync 2.0
 
 Según sus [documentos oficiales de zkSync 2.0](https://v2-docs.zksync.io/dev/#fundamental-topics) es un gran paso adelante en las tecnologías de Capa 2. Es una mejora largamente esperada que ofrece muchos beneficios nunca antes disfrutados por los desarrolladores de Ethereum como son:
 
