@@ -328,6 +328,8 @@ Los usuarios podrán unir activos entre la red de prueba de Goerli y zkEVM para 
 
 La nueva red de prueba beta privada ConsenSys zkEVM, equivalente a EVM, ya está disponible en Infura para los solicitantes seleccionados. Los participantes de Testnet podrán unir activos entre Goerli testnet y zkEVM para probar sus contratos inteligentes, dapps utilizando las herramientas, la infraestructura y las billeteras con las que están familiarizados. La integración lista para usar con las herramientas Ethereum existentes permite la experiencia, la seguridad y la descentralización de Ethereum pero con tarifas de transacción ultrabajas.  
 
+![Graph](/im%C3%A1genes/api.png)
+
 Así que aquí seguimos a la espera, en lo que hemos realizados pruebas, deploy, artículo...esta red de prueba privada aún no nos ha dado acceso para testearla, por lo que ya la analizaremos más adelante.
 
 ---
