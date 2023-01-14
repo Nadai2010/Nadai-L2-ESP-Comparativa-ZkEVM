@@ -6,6 +6,9 @@
 <div align="center">
   <h1 style="font-size: larger;">
    <img src=imágenes/evm.gif width="150">
+   <img src=imágenes/evm.gif width="150">
+   <img src=imágenes/evm.gif width="150">
+   <img src=imágenes/evm.gif width="150">
   </h1>
 </div>
  
