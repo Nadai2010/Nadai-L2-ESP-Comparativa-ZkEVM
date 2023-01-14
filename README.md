@@ -1,5 +1,14 @@
-## ¿Qúe son las Zk-EVM? 
-
+<div align="center">
+  <h1 style="font-size: larger;">
+  <strong>¿Qúe son las Zk-EVM? </strong> 
+  </h1>
+</div>
+<div align="center">
+  <h1 style="font-size: larger;">
+   <img src=imágenes/evm.gif width="80">
+  </h1>
+</div>
+ 
 Feliz año 2023, que mejor forma de empezar que con una comparación entre las `Zk-EVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos Taiko, Scroll, ZkSync, Consensys y zk-EVM Polygon y como nos ha resultado la experiencia de acceder a estas tesnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZepelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
 
 Pero primero hablemos un poco sobre ella, `la zk-EVM` [(Artículo de Vitalik Buterin)](https://vitalik.ca/general/2022/08/04/zkevm.html), es una máquina virtual compatible con `EVM` (Ethereum Virtual Machine) que admite el cálculo de prueba de conocimiento cero `(zk)`, para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto. A diferencia de las máquinas virtuales regulares, un zkEVM prueba la corrección de la ejecución del programa, incluida la validez de las entradas y salidas utilizadas en la operación.
