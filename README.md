@@ -20,6 +20,7 @@ Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una co
 
 Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy nuevas y se encuentran en una fase temprana de desarrollo, por lo que todavía se requiere más investigación y desarrollo antes de poder determinar si son viables a largo plazo. Por lo que decidimos empezar a testearla y compartir los resultados. Siempre tener en cuenta que los costes obtenidos pueden variar dependiendo de congestión de red, linea de tiempo distinta para pruebas, competencia entre los validadores u otras datos aunque se han hecho cogiendo la media de las últimas 25 páginas de transacciones para tener algo más aproximado sobre la actividad de cada red, también hemos apreciado que algunos calculos de `USD` en `Metamask` son **INCORRECTOS**, por lo que los cálculos están directos de las transacciones en la siguiente tabla.
 
+![Graph](/im%C3%A1genes/Tabla.png)
 
 ```bash
 ╔════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -41,8 +42,8 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 ╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
 ║   CONSENSYS   ║ *        ║               ║                  ║*SI-RCP INFURA║  1-3  TX/BLQ ║ 
 ╚═══════════════╩══════════╩═══════════════╩══════════════════╩══════════════╩══════════════╩══════════╩═════════╝
-
 ```
+
 * `RCP`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido la forma de agregar que hemos encontrado oficialmente.
 * `Faucet`: Es un servicio que permite obtener fondos gratuitos para probar la red y puede variar dependiendo de la implementación de zk-EVM. Hemos agregado el tipo de verificación necesaria para recibirlos.
 * `Bridge`: Es un servicio que permite conectar dos o mas redes blockchain y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido los pasos necesarios en cada bridge, asi como su velocidad y facilidad en el proceso.
@@ -319,4 +320,4 @@ Y esperar a que te acpeten
 
 ---
 
-Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zk-EVM o que no se les hizo demasiado aburrido el documento 😂 😂, con él hemos querido reforzar el poder de de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
+Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zk-EVM o que no se les hizo demasiado aburrido el documento 😂 😂, con él hemos querido reforzar el poder de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
