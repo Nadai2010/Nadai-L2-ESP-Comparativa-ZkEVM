@@ -34,28 +34,6 @@ Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy n
 
 ![Graph](/im%C3%A1genes/Tabla.png)
 
-```bash
-╔════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                              COMPARATIVA ENTRE ZK-EVM 2.0                                      ║ 
-╠═══════════════╦══════════╦═══════════════╦══════════════════╦══════════════╦══════════════╦══════════╦═════════╣
-║     ZK-EVM    ║    RCP   ║     FAUCET    ║       BRIDGE     ║   WHITELIST  ║  EXPLORADOR  ║  DEPLOY  ║   FEE   ║ 
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╬═════════╣
-║   SCROLL L1   ║   AUTO   ║ TWITTER-FAST  ║ EN 1 PASO  -GOOD ║      NO      ║ 30-40 TX/BLQ ║  FÁCIL   ║ 0.10 USD║      
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╬═════════╣
-║   SCROLL L2   ║   AUTO   ║ TWITTER-FAST  ║ EN 1 PASO  -SLOW ║      NO      ║  5-20 TX/BLQ ║  FÁCIL   ║ 0.15 USD║ 
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╬═════════╣
-║ ZKEVM-POLYGON ║ MAN-AUTO ║  ETH GOERLI   ║ EN 2 PASOS -GOOD ║      NO      ║   1   TX/BLQ ║  FÁCIL   ║ 0.07 USD║ 
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
-║    TAIKO L1   ║  MANUAL  ║ CAPTCHA-FAST  ║*EN 2 PASOS -REGUL║      NO      ║ 40-60 TX/BLQ ║  FÁCIL   ║ 2.6  USD║ 
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
-║    TAIKO L2   ║  MANUAL  ║    SOLO L1    ║ EN 2 PASOS -SLOW ║      NO      ║  1-5  TX/BLQ ║  FÁCIL   ║ 0.15 USD║ 
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
-║  ZK-SYNC 2.0  ║ MAN-AUTO ║ TWITTER-SLOW  ║ EN 1 PASO  -GOOD ║      NO      ║  1-3  TX/BLQ ║  HARD    ║ 0.48 USD║ 
-╠═══════════════╬══════════╬═══════════════╬══════════════════╬══════════════╬══════════════╬══════════╣═════════╣
-║   CONSENSYS   ║ *        ║               ║                  ║*SI-RCP INFURA║  1-3  TX/BLQ ║ 
-╚═══════════════╩══════════╩═══════════════╩══════════════════╩══════════════╩══════════════╩══════════╩═════════╝
-```
-
 * `RCP`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido la forma de agregar que hemos encontrado oficialmente.
 * `Faucet`: Es un servicio que permite obtener fondos gratuitos para probar la red y puede variar dependiendo de la implementación de zk-EVM. Hemos agregado el tipo de verificación necesaria para recibirlos.
 * `Bridge`: Es un servicio que permite conectar dos o mas redes blockchain y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido los pasos necesarios en cada bridge, asi como su velocidad y facilidad en el proceso.
