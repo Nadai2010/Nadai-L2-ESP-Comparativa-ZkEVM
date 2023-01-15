@@ -336,3 +336,5 @@ Así que aquí seguimos a la espera, en lo que hemos realizados pruebas, deploy,
 ### Agradecimientos
 
 Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zk-EVM o que no se les hizo demasiado aburrido el documento 😂 😂, con él hemos querido reforzar el poder de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
+
+Espero que les haya gustado, si quieren realizar pruebas en las diferentes redes o ver los códigos utilizados para la creación de este documento, visite la repo oficial [Nadai](https://github.com/Nadai2010) o el [Documento completo Nadai L2ESP Comprativa de ZkEVM](https://github.com/Nadai2010/Nadai-L2-ESP-Comparativa-ZkEVM)
