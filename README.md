@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <h1 style="font-size: larger; margin-top: -500000px;">
+  <h1 style="font-size: larger;">
   <img src="/im%C3%A1genes/evm.gif" width="50" height="50">
   <strong>¿Qúe son las Zk-EVM? </strong> 
   <img src="/im%C3%A1genes/evm.gif" width="50" height="50">
@@ -96,7 +96,7 @@ En Taiko para conseguir faucet podemos usar nuestro Twitter desde el link oficia
 
 ### Pruebas Bridge
 
-Hemos enviado por el [Bridge Taiko](https://bridge.a1.taiko.xyz/) desde Ethereum A1 a Taiko A1 la cantidad de [0.05 ETH](https://l1explorer.a1.taiko.xyz/tx/0x61967b34488a16f5ef7a72f9c918d8b8185047aa6e24363f44c7994a4beaf467) (0.002646895244654985 Ether = 3.45 usd ) la cual hemos tenido que hacer un Claim para poder pagar los fee desde el cual me ha [fallado 3 veces](https://l2explorer.a1.taiko.xyz/tx/0xff3746a3ba5c0ae61bab1aa56e3c471f35b466d8eb81d3ab561dbde1fff42108), a la cuarta le tripliqué el gas manual `3.000.000 gas limit` para probar y la transacción [se confirmó](https://l2explorer.a1.taiko.xyz/tx/0xc5897ae22b975b9564a576e785f7d70c44792b7df16019c6c134fdc869d68cb1) pero a un fee (0.002165108 Ether = 2.88 usd), que como podemos comprobar es muy diferente de los 8 usd que marcaba nuestra wallet.
+Hemos enviado por el [Bridge Taiko](https://bridge.a1.taiko.xyz/) desde Ethereum A1 a Taiko A1 la cantidad de [0.05 ETH](https://l1explorer.a1.taiko.xyz/tx/0x61967b34488a16f5ef7a72f9c918d8b8185047aa6e24363f44c7994a4beaf467) (0.002646895244654985 Ether = 3.45 usd ) la cual hemos tenido que hacer un Claim para poder pagar los fee desde el cual me ha [🟡 fallado 3 veces](https://l2explorer.a1.taiko.xyz/tx/0xff3746a3ba5c0ae61bab1aa56e3c471f35b466d8eb81d3ab561dbde1fff42108), a la cuarta le tripliqué el gas manual `3.000.000 gas limit` para probar y la transacción [se confirmó](https://l2explorer.a1.taiko.xyz/tx/0xc5897ae22b975b9564a576e785f7d70c44792b7df16019c6c134fdc869d68cb1) pero a un fee final de (0.002165108 Ether = 2.88 usd) frente a 8 usd que marcaba nuestra wallet.
 
 ### Pruebas Deploy
 
