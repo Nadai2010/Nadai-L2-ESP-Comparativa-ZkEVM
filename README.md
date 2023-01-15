@@ -1,6 +1,6 @@
 <div align="center">
   <h1 style="font-size: larger;">
-  <strong>Nadai L2-ESP Comparación entre Zk-EVM</strong> 
+  <strong>Nadai L2-ESP Comparativa entre Zk-EVM</strong> 
   </h1>
 </div>
 
