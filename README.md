@@ -1,5 +1,10 @@
-# ¿Qúe son las Zk-EVM? 
-<img src="/im%C3%A1genes/evm.gif" width="180" height="150"><img src="/im%C3%A1genes/evm.gif" width="150" height="150"><img src="/im%C3%A1genes/evm.gif" width="150" height="150"><img src="/im%C3%A1genes/evm.gif" width="150" height="150"><img src="/im%C3%A1genes/evm.gif" width="180" height="150">
+<div align="center">
+  <h1 style="font-size: larger; margin-top: -500000px;">
+  <img src="/im%C3%A1genes/evm.gif" width="50" height="50">
+  <strong>¿Qúe son las Zk-EVM? </strong> 
+  <img src="/im%C3%A1genes/evm.gif" width="50" height="50">
+  </h1>
+</div>
 
 Feliz año 2023, que mejor forma de empezar que con una comparación entre las `Zk-EVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos **`5 (Taiko, Scroll, ZkSync 2.0, zk-EVM Polygon y ConsenSys)`** y como nos ha resultado la experiencia de acceder a estas tesnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZepelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
 
