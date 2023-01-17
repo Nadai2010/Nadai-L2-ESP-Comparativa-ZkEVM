@@ -179,25 +179,6 @@ El zkEVM lleva a cabo cambios de estado, que provienen de ejecuciones de transac
 
 Aunque adoptar este enfoque de diseño revolucionario fue una decisión difícil de tomar, el objetivo es minimizar la fricción de los usuarios y las dApps al usar la solución. Es un enfoque que requiere la recreación de todos los códigos de operación EVM para el despliegue transparente de los contratos inteligentes de Ethereum existentes. Para este propósito, el equipo ha creado y diseñado un nuevo conjunto de tecnologías y herramientas.
 
-Hablemos ahora de [Hermez](https://docs.hermez.io/Hermez_1.0/about/scalability/) y algunos de sus principios:
-
-1. Descentralizado: Se denomina red porque el modelo está descentralizado de forma nativa. Es una construcción de capa 2 y tiene la intención de realizar transacciones a miles por segundo, por lo que el algoritmo de consenso debe ser simple para que un agente (coordinador) procese esta cantidad de transacciones en un momento dado. Con este modelo, aún mantiene las propiedades de no tener permiso para participar y resistir la censura para las transacciones de los usuarios.
-
-2. Eficiente: El modelo descentralizado se implementa a través de un sistema de subasta sin permiso para que los posibles coordinadores de la red obtengan el derecho de procesar transacciones durante un período de tiempo. Este modelo de subasta incentiva la eficiencia de los coordinadores ya que necesitan procesar tantas transacciones como puedan para cobrar las tarifas y compensar su inversión y sus gastos de operación (y ganar dinero con ello).
-
-* Hermez implementa un ZK-Rollup basado en pruebas ZK-SNARK, el más eficiente en términos de costo por lotes en Ethereum. Dado que los lotes de transacciones tienen un tamaño máximo de 2000, los usuarios se beneficiarán de la escala y la tecnología subyacente para lograr ahorros nominales máximos de hasta el 97 % en comparación con el costo de Ethereum para una sola transferencia de token.
-
-3. Seguridad en mente: La escalabilidad se puede lograr de diferentes maneras. Hermez es una construcción de capa 2 porque aprovecha Ethereum no solo mediante el uso de sus tokens nativos, sino también tomando prestada la seguridad de Ethereum como una fuerte cadena de bloques pública.
-
-* La implementación de Hermez se basa en la tecnología propia de iden3 (bibliotecas Circom y SnarkJS) y la tecnología criptográfica que ha demostrado ser la más robusta hasta el momento, tal como se utiliza en la cadena de bloques ZCash. Como una red nueva con un período de arranque, Hermez tiene medidas de seguridad transitorias para proteger el sistema con el objetivo de eliminarlas y dejarlo completamente descentralizado.
-
-4. Parte de la comunidad: Hermez está diseñado para contribuir con la comunidad, ya que el proyecto no sería posible sin él. Las innovaciones en escalabilidad son una rara oportunidad para realinear los incentivos en torno a la comunidad y los bienes públicos que brindan.
-
-* El 40% del valor generado en la red será enviado a un proceso de donación donde los proyectos del ecosistema se beneficiarán de las donaciones. Comenzará con Gitcoin, pero es posible que se habiliten otros grupos en el futuro. Hermez abrirá el código fuente de todo el protocolo y el código coordinador, está abierto a contribuciones y se ha comprometido a contribuir a la creación de un ecosistema L2 para iniciativas como una mejor interoperabilidad L2.
-
-5. Enfocado en la Usabilidad: ZK-Rollups proporciona la tecnología para la finalización instantánea de las transacciones, lo que Hermez entiende que es una característica clave para la usabilidad.
-
-* El Protocolo Hermez también proporciona una garantía de que las transacciones de los usuarios no se pueden censurar y que todos los fondos siempre se pueden enviar de vuelta a la capa 1. Las soluciones de la capa 2 aumentan la complejidad para los usuarios, pero el enfoque del proyecto Hermez es proporcionar la mejor usabilidad posible para la incorporación de usuarios. 
 
 ### Pruebas RCP
 Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido tanto manual como automática y sólo deberemos seguir los pasos [Oficiales Manueales](https://wiki.polygon.technology/docs/zkEVM/develop/#connecting-to-zkevm) o [Oficiales Automática](https://public.zkevm-test.net/) y le damos directamente `add Metamask`, el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada la red, también puede seguir la guía oficial desde el equipo de [Zk-EVM-Polygon](https://polygon.technology/blog/your-three-step-guide-to-using-polygon-zkevm-yes-its-that-easy).
