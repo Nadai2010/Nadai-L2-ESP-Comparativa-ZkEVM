@@ -123,19 +123,19 @@ Según uno de los [documentos oficiales de Scroll](https://scroll.io/blog/techni
 
 4. `Descentralización en todas las capas de la comunidad:` La descentralización es una propiedad central de las cadenas de bloques que a menudo se pasa por alto o se intercambia de manera inadecuada por eficiencia. Creemos que es uno de los aspectos más valiosos de las cadenas de bloques y garantiza que los protocolos y las comunidades sean vibrantes y resistentes frente a la censura o los ataques coordinados. Consideramos la descentralización en muchos aspectos de Scroll, incluidos los operadores de nodos, los probadores y la comunidad de desarrolladores y usuarios. Al construir abiertamente con la comunidad y trazar un camino creíble para descentralizar tanto la prueba como la secuenciación, Scroll se compromete a garantizar la descentralización en todas las dimensiones.
 
-### Pruebas RCP
+#### Pruebas RCP
 
 Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido automática y sólo deberemos darle a `add Metamask` desde los [documentos oficiales](https://scroll.io/prealpha/), el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada [Scroll](https://scroll.io/) en nuestra billetera.
 
-### Pruebas Faucet
+#### Pruebas Faucet
 
 En Scroll para conseguir faucet en L1 tendremos que ir su página de [Faucet](https://scroll.io/prealpha/faucet), verificar un captcha, poner nuestra wallet para recibir `1 ETH` y `100 TSUSDC` de prueba. Para L2 no hay faucet, así que se debe usar el bridge para recibir nuestros tokens en L2.
 
-### Pruebas Bridge
+#### Pruebas Bridge
 
 Hemos enviado por el [Bridge Scroll](https://scroll.io/prealpha/bridge) desde Scroll L1 a Scroll L2 la cantidad de [0.5 ETH](https://l1scan.scroll.io/tx/0xdfe42a882b64023047260de6207669c86e9aa7a4bb58370d96ebc485c71b492c) (0.000173922000927584 Ether = 0.22 usd ), todo ha sido en un solo paso sin tener que interactuar desde L2.
 
-### Pruebas Deploy
+#### Pruebas Deploy
 
 El deploy ha sido desde Remix y no ha habido ninguna complicación, sólo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Scroll Testnet L1 como Scroll Testnet L2 concecutivamente sin tener ningun tipo de inconveniente.
 
