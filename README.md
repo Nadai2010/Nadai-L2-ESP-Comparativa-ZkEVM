@@ -20,9 +20,9 @@ Pero primero hablemos un poco sobre ella, `la zkEVM` [(Artículo de Vitalik Bute
 
 Existen varias implementaciones de zkEVM disponibles en el mercado, cada una con sus propias características y ventajas. A continuación describiremos algunas de las implementaciones más conocidas:
 
-* [Taiko:](https://taiko.xyz/) Los ZK-Rollups equivalentes a Ethereum, a veces llamados zkEVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
+* [Taiko:](https://taiko.xyz/) Los zk Rollups equivalentes a Ethereum, a veces llamados zkEVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un zkEVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
 
-* [Scroll:](https://scroll.io/) Scroll es otra implementación de zk-EVM. La solución nativa de escalado zkEVM para Ethereum Scroll es un zkRollup basado en zk-EVM en Ethereum que permite la compatibilidad nativa para las aplicaciones y herramientas de Ethereum existentes.
+* [Scroll:](https://scroll.io/) Scroll es otra implementación de zkEVM. La solución nativa de escalado zkEVM para Ethereum Scroll es un zkRollup basado en zkEVM en Ethereum que permite la compatibilidad nativa para las aplicaciones y herramientas de Ethereum existentes.
 
 * [Polygon zkEVM:](https://polygon.technology/solutions/polygon-zkevm) La Polygon zkEVM es una implementación de zkEVM desarrollada por el equipo de Polygon. Es la una solución de escalado de conocimiento cero `(zk o zero-knowledgezk o zero-knowledge)`, que es totalmente compatible con Ethereum. Todos los contratos inteligentes, herramientas de desarrollo y billeteras existentes funcionan a la perfección. El zkEVM aprovecha el poder de las pruebas ZK para reducir el costo de transacción y aumentar enormemente el rendimiento, todo mientras hereda la seguridad de Ethereum L1.
 
