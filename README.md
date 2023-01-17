@@ -1,47 +1,47 @@
 <div align="center">
   <h1 style="font-size: larger;">
-  <strong>Nadai L2-ESP Comparativa entre Zk-EVM</strong> 
+  <strong>Nadai L2-ESP Comparativa entre zkEVM</strong> 
   </h1>
 </div>
 
 <div align="center">
   <h1 style="font-size: larger;">
   <img src="/im%C3%A1genes/evm.gif" width="50" height="50">
-  <strong>¿Qúe son las Zk-EVM? </strong> 
+  <strong>¿Qúe son las zkEVM? </strong> 
   <img src="/im%C3%A1genes/evm.gif" width="50" height="50">
   </h1>
 </div>
 
-Feliz año 2023, que mejor forma de empezar que con una comparación entre las `Zk-EVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos **`5 (Taiko, Scroll, ZkSync 2.0, zk-EVM Polygon y ConsenSys)`** y como nos ha resultado la experiencia de acceder a estas testnet, agregar sus rcp, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZepelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
+Feliz año 2023, que mejor forma de empezar que con una comparación entre las `zkEVM` a modo usuario, técnicos y experiencias en algunas pruebas realizadas. Entre ellas compararemos **`5 (Taiko, Scroll, zkSync 2.0, Polygon zkEVM y ConsenSys)`** y como nos ha resultado la experiencia de acceder a estas testnet, agregar sus RPC, conseguir faucet, tablas de fee e inclusive veremos como ha ido la experiencia en desarrollar nuestros propios ERC20 con contratos Standard desde [OpenZeppelin Wizard](https://wizard.openzeppelin.com/) y luego deployandolos en Remix.
 
-Pero primero hablemos un poco sobre ella, `la zk-EVM` [(Artículo de Vitalik Buterin)](https://vitalik.ca/general/2022/08/04/zkevm.html), es una máquina virtual compatible con `EVM` (Ethereum Virtual Machine) que admite el cálculo de prueba de conocimiento cero `(zk)`, para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto. A diferencia de las máquinas virtuales regulares, un zkEVM prueba la corrección de la ejecución del programa, incluida la validez de las entradas y salidas utilizadas en la operación.
+Pero primero hablemos un poco sobre ella, `la zkEVM` [(Artículo de Vitalik Buterin)](https://vitalik.ca/general/2022/08/04/zkevm.html), es una máquina virtual compatible con `EVM` (Ethereum Virtual Machine) que admite el cálculo de prueba de conocimiento cero `(zk o zero-knowledge)`, para ocultar la información del contrato y las transacciones relacionadas. Esto significa que los participantes en la red pueden verificar la validez de una transacción sin necesidad de conocer su contenido exacto. A diferencia de las máquinas virtuales regulares, un zkEVM prueba la corrección de la ejecución del programa, incluida la validez de las entradas y salidas utilizadas en la operación.
 
 ![Graph](/im%C3%A1genes/zkemv.png)
 
-Existen varias implementaciones de zk-EVM disponibles en el mercado, cada una con sus propias características y ventajas. A continuación describiremos algunas de las implementaciones más conocidas:
+Existen varias implementaciones de zkEVM disponibles en el mercado, cada una con sus propias características y ventajas. A continuación describiremos algunas de las implementaciones más conocidas:
 
-* [Taiko:](https://taiko.xyz/) Los ZK-Rollups equivalentes a Ethereum, a veces llamados ZK-EVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
+* [Taiko:](https://taiko.xyz/) Los ZK-Rollups equivalentes a Ethereum, a veces llamados zkEVM, son el santo grial de las soluciones de escalado de capa 2, ya que no comprometen la seguridad ni la compatibilidad. En lenguaje reciente, Taiko pretende ser un ZK-EVM de tipo 1 , que prioriza la equivalencia perfecta de EVM/Ethereum sobre la velocidad de generación a prueba de ZK.
 
 * [Scroll:](https://scroll.io/) Scroll es otra implementación de zk-EVM. La solución nativa de escalado zkEVM para Ethereum Scroll es un zkRollup basado en zk-EVM en Ethereum que permite la compatibilidad nativa para las aplicaciones y herramientas de Ethereum existentes.
 
-* [zkEVM-Polygon:](https://polygon.technology/solutions/polygon-zkevm) La zk-EVM-Polygon es una implementación de zk-EVM desarrollada por el equipo de Polygon. Es la una solución de escalado de conocimiento cero `(ZK)`, que es totalmente compatible con Ethereum. Todos los contratos inteligentes, herramientas de desarrollo y billeteras existentes funcionan a la perfección. El zkEVM aprovecha el poder de las pruebas ZK para reducir el costo de transacción y aumentar enormemente el rendimiento, todo mientras hereda la seguridad de Ethereum L1.
+* [Polygon zkEVM:](https://polygon.technology/solutions/polygon-zkevm) La Polygon zkEVM es una implementación de zkEVM desarrollada por el equipo de Polygon. Es la una solución de escalado de conocimiento cero `(zk o zero-knowledgezk o zero-knowledge)`, que es totalmente compatible con Ethereum. Todos los contratos inteligentes, herramientas de desarrollo y billeteras existentes funcionan a la perfección. El zkEVM aprovecha el poder de las pruebas ZK para reducir el costo de transacción y aumentar enormemente el rendimiento, todo mientras hereda la seguridad de Ethereum L1.
 
-* [ZkSync2.0:](https://zksync.io/) ZkSync 2.0 es una implementación de zk-EVM desarrollada por el equipo de Matter Labs. Es un paquete acumulativo Zero Knowledge `(ZK)` que admite la compatibilidad generalizada de EVM para la cadena de bloques de Ethereum. El principal beneficio de zkSync 2.0 es que los desarrolladores que han creado EVM dApps pueden migrar a zkSync 2.0 sin esfuerzo y obtener tarifas de gas significativamente más bajas y más transacciones por segundo mientras heredan la seguridad y la descentralización de Ethereum.
+* [zkSync 2.0:](https://zksync.io/) zkSync 2.0 es una implementación de zkEVM desarrollada por el equipo de Matter Labs. Es un rollup de conocimiento cero `(zk o zero-knowledge)` que admite la compatibilidad generalizada de EVM para la cadena de bloques de Ethereum. El principal beneficio de zkSync 2.0 es que los desarrolladores que han creado EVM dApps pueden migrar a zkSync 2.0 sin esfuerzo y obtener tarifas de gas significativamente más bajas y más transacciones por segundo mientras heredan la seguridad y la descentralización de Ethereum.
 
-* [ConsenSys zkEVM:](https://goerli.zkevm.consensys.net/) Es una implementación de zk-EVM desarrollada por ConsenSys, es una máquina virtual Ethereum de conocimiento cero `(ZK)` de tipo 2. Un zkEVM replica el entorno de Ethereum como un paquete acumulativo y permite a los desarrolladores desarrollarlo como lo harían en la red principal de Ethereum. La red ConsenSys zkEVM le permite implementar cualquier contrato inteligente, usar cualquier herramienta y desarrollar como si estuviera construyendo en Ethereum. Para los usuarios, esto permite la experiencia y las garantías de seguridad de Ethereum, pero con costos de transacción más bajos.
+* [ConsenSys zkEVM:](https://goerli.zkevm.consensys.net/) Es una implementación de zkEVM desarrollada por ConsenSys, es una máquina virtual Ethereum de conocimiento cero `(ZK)` de tipo 2. Un zkEVM replica el entorno de Ethereum como un paquete acumulativo y permite a los desarrolladores desarrollarlo como lo harían en la red principal de Ethereum. La red ConsenSys zkEVM le permite implementar cualquier contrato inteligente, usar cualquier herramienta y desarrollar como si estuviera construyendo en Ethereum. Para los usuarios, esto permite la experiencia y las garantías de seguridad de Ethereum, pero con costos de transacción más bajos.
 
-Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy nuevas y se encuentran en una fase temprana de desarrollo, por lo que todavía se requiere más investigación y desarrollo antes de poder determinar si son viables a largo plazo. Por lo que decidimos empezar a testearla y compartir los resultados. Siempre tener en cuenta que los costes obtenidos pueden variar dependiendo de congestión de red, linea de tiempo distinta para pruebas, competencia entre los validadores u otras datos aunque se han hecho cogiendo la media de las últimas 25 páginas de transacciones para tener algo más aproximado sobre la actividad de cada red, también hemos apreciado que algunos calculos de `USD` en `Metamask` son **INCORRECTOS**, por lo que los cálculos están directos de las transacciones en la siguiente tabla.
+Sin embargo, es importante tener en cuenta que estas tecnologías aún son muy nuevas y se encuentran en una fase temprana de desarrollo, por lo que todavía se requiere más investigación y desarrollo antes de poder determinar si son viables a largo plazo. Por lo que decidimos empezar a testearla y compartir los resultados. Siempre tener en cuenta que los costes obtenidos pueden variar dependiendo de la congestión de la red, linea de tiempo distinta para pruebas, competencia entre los validadores u otras datos aunque se han hecho cogiendo la media de las últimas 25 páginas de transacciones para tener algo más aproximado sobre la actividad de cada red, también hemos apreciado que algunos calculos de `USD` en `Metamask` son **INCORRECTOS**, por lo que los cálculos están directos de las transacciones en la siguiente tabla.
 
 ![Graph](/im%C3%A1genes/Tabla.png)
 
-* `RCP`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido la forma de agregar que hemos encontrado oficialmente.
+* `RPC`: Es el punto de acceso para interactuar con la red y puede variar dependiendo de la implementación de zkEVM. Hemos añadido la forma de agregar que hemos encontrado oficialmente.
 * `Faucet`: Es un servicio que permite obtener fondos gratuitos para probar la red y puede variar dependiendo de la implementación de zk-EVM. Hemos agregado el tipo de verificación necesaria para recibirlos.
 * `Bridge`: Es un servicio que permite conectar dos o mas redes blockchain y puede variar dependiendo de la implementación de zk-EVM. Hemos añadido los pasos necesarios en cada bridge, asi como su velocidad y facilidad en el proceso.
 * `Whitelist:` Es un mecanismo de seguridad que permite especificar un conjunto de direcciones de billetera autorizadas para realizar transacciones en un contrato inteligente o en una red blockchain. Hemos añadido las whitelist, el `*` hace referencia a un registro y autorización previo de ConSensys para poder acceder a la API de infura y poder añadir el RCP.
 * `Explorador:` Es una herramienta que permite ver el estado actual de la red y puede variar dependiendo de la implementación de zk-EVM. Hemos medido la actividad de transacciones por bloques, tiempo y precios decada red.
 * `Deploy:` Es el proceso de desplegar un contrato en la red y puede variar dependiendo de la implementación de zk-EVM. Hemos evaluado los que han sido completamente igual que en `ETH`, y los que no sha resultado más complejo.
-* `Fee:` Es el costo de transacción y puede variar dependiendo de la congestión de la red y la competencia entre los validadores. Hemos anotado la cantidad de Fee de una transacción de enviar `500 Token ERC20` deployados en cada red a otra wallet.
-
+* `Fee/TX:` Es el costo de transacción y puede variar dependiendo de la congestión de la red y la competencia entre los validadores. Hemos anotado la cantidad de Fee de una transacción de enviar `500 Token ERC20` deployados en cada red a otra wallet.
+* `Fee/BR`: Es el costo de transacción y puede variar dependiendo de la congestión de la red y la competencia entre los validadores. Hemos anotado la cantidad de Fee de una transacción de enviar por el BRIDGE correspondiente de cada solución hacia su Layer 1.
 ---
 
 <div align="left">
@@ -64,9 +64,9 @@ A continuación, compartimos los principios de Taiko, tres principios básicos q
 
 3. `Abierto:` Taiko es completamente de código abierto y está centrado en la comunidad. Construimos sobre los hombros de gigantes y apreciamos contribuir de nuevo al progreso técnico y la comunidad de Ethereum. Valoramos las contribuciones de la comunidad al proyecto, aprovechando las mejores mentes e ideas que están interesadas en el espacio. El tipo de actividad que Taiko ejecuta y asegura exige transparencia.
 
-### Pruebas RCP
+### Pruebas RPC
 
-Para agregar el RCP en Metamask ha resultado sencillo, aunque la experiencia ha sido manual, para ello deberemos de ir a Metamask, Redes y Agregar otras Redes. Puede consultar documentación oficial y como agregarla desde [aquí](https://taiko.xyz/docs/alpha-1-testnet/configure-wallet)
+Para agregar el RPC en Metamask ha resultado sencillo, aunque la experiencia ha sido manual, para ello deberemos de ir a Metamask, Redes y Agregar otras Redes. Puede consultar documentación oficial y como agregarla desde [aquí](https://taiko.xyz/docs/alpha-1-testnet/configure-wallet)
 
 ### Pruebas Faucet
 
@@ -78,7 +78,7 @@ Hemos enviado por el [Bridge Taiko](https://bridge.a1.taiko.xyz/) desde Ethereum
 
 ### Pruebas Deploy
 
-El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Ethereum A1 como Taiko A1 concecutivamente sin tener ningun tipo de inconveniente..
+El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RPC de Ethereum A1 como Taiko A1 concecutivamente sin tener ningun tipo de inconveniente.
 
 
 * [Deploy Ethereum A1](https://l1explorer.a1.taiko.xyz/tx/0x09730dafd4f688999eb3ccc95e3159ddd3d33f9d713f7e03aac379161e8a9138)
@@ -123,9 +123,9 @@ Según uno de los [documentos oficiales de Scroll](https://scroll.io/blog/techni
 
 4. `Descentralización en todas las capas de la comunidad:` La descentralización es una propiedad central de las cadenas de bloques que a menudo se pasa por alto o se intercambia de manera inadecuada por eficiencia. Creemos que es uno de los aspectos más valiosos de las cadenas de bloques y garantiza que los protocolos y las comunidades sean vibrantes y resistentes frente a la censura o los ataques coordinados. Consideramos la descentralización en muchos aspectos de Scroll, incluidos los operadores de nodos, los probadores y la comunidad de desarrolladores y usuarios. Al construir abiertamente con la comunidad y trazar un camino creíble para descentralizar tanto la prueba como la secuenciación, Scroll se compromete a garantizar la descentralización en todas las dimensiones.
 
-#### Pruebas RCP
+#### Pruebas RPC
 
-Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido automática y sólo deberemos darle a `add Metamask` desde los [documentos oficiales](https://scroll.io/prealpha/), el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada [Scroll](https://scroll.io/) en nuestra billetera.
+Para agregar el RPC en Metamask ha resultado sencillo, la experiencia ha sido automática y sólo deberemos darle a `add Metamask` desde los [documentos oficiales](https://scroll.io/prealpha/), el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada [Scroll](https://scroll.io/) en nuestra billetera.
 
 #### Pruebas Faucet
 
@@ -133,11 +133,11 @@ En Scroll para conseguir faucet en L1 tendremos que ir su página de [Faucet](ht
 
 #### Pruebas Bridge
 
-Hemos enviado por el [Bridge Scroll](https://scroll.io/prealpha/bridge) desde Scroll L1 a Scroll L2 la cantidad de [0.5 ETH](https://l1scan.scroll.io/tx/0xdfe42a882b64023047260de6207669c86e9aa7a4bb58370d96ebc485c71b492c) (0.000173922000927584 Ether = 0.22 usd ), todo ha sido en un solo paso sin tener que interactuar desde L2.
+Hemos enviado por el [Bridge Scroll](https://scroll.io/prealpha/bridge) desde Scroll L1 a Scroll L2 la cantidad de [0.5 ETH](https://l1scan.scroll.io/tx/0xdfe42a882b64023047260de6207669c86e9aa7a4bb58370d96ebc485c71b492c) (0.000173922000927584 Ether = 0.22 usd ), todo ha sido en un sólo paso sin tener que interactuar desde L2.
 
 #### Pruebas Deploy
 
-El deploy ha sido desde Remix y no ha habido ninguna complicación, sólo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de Scroll Testnet L1 como Scroll Testnet L2 concecutivamente sin tener ningun tipo de inconveniente.
+El deploy ha sido desde Remix y no ha habido ninguna complicación, sólo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RPC de Scroll Testnet L1 como Scroll Testnet L2 concecutivamente sin tener ningun tipo de inconveniente.
 
 
 * [Deploy  Scroll Testnet L1](https://l1scan.scroll.io/tx/0xdfadf91159cf13fa6e3466cf541ec2b464df7232bfc3f772c8631a8bc48dea50)
@@ -163,13 +163,13 @@ Probamos a enviar desde Taiko A1 entre wallets 500 L2Tai , el envio fue casi ins
 <div align="left">
   <h1 style="font-size: larger;">
    <img src="imágenes/polygon.png" width="25">
-   <strong>    Zk-EVM-Polygon        </strong> 
+   <strong>   Polygon zkEVM      </strong> 
   </h1>
 </div>
 
-## Principios de zk-EVM Polygon
+## Principios de Polygon zkEVM
 
-Según los [documentos oficiales de Zk-EVM Polygon](https://polygon.technology/solutions/polygon-zkevm/) se basan en una solución de escalabilidad de Ethereum Layer 2 descentralizada que utiliza tecnología criptográfica de conocimiento cero `(zk)` para proporcionar validación y finalización rápida de los cálculos de transacciones fuera de la cadena. Ha sido diseñado y desarrollado para emular la máquina virtual de Ethereum (EVM) al recrear todos los códigos de operación de EVM existentes para una implementación transparente de los contratos inteligentes de Ethereum existentes.
+Según los [documentos oficiales de Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm/) se basan en una solución de escalabilidad de Ethereum Layer 2 descentralizada que utiliza tecnología criptográfica de conocimiento cero `(zk o zero-knowledge)` para proporcionar validación y finalización rápida de los cálculos de transacciones fuera de la cadena. Ha sido diseñado y desarrollado para emular la máquina virtual de Ethereum (EVM) al recrear todos los códigos de operación de EVM existentes para una implementación transparente de los contratos inteligentes de Ethereum existentes.
 
 1. Equivalente a EVM: Ethereum no es solo una cadena de bloques. Es un rico ecosistema de contratos inteligentes, herramientas para desarrolladores, infraestructura y billeteras. Es una comunidad vibrante de desarrolladores, auditores y usuarios. La mejor manera de escalar Ethereum es mantener la compatibilidad con este ecosistema, y ​​zkEVM brindará a los usuarios y desarrolladores una experiencia idéntica a Ethereum L1, solo que con una mejora masiva de escalabilidad.
 
@@ -180,8 +180,9 @@ El zkEVM lleva a cabo cambios de estado, que provienen de ejecuciones de transac
 Aunque adoptar este enfoque de diseño revolucionario fue una decisión difícil de tomar, el objetivo es minimizar la fricción de los usuarios y las dApps al usar la solución. Es un enfoque que requiere la recreación de todos los códigos de operación EVM para el despliegue transparente de los contratos inteligentes de Ethereum existentes. Para este propósito, el equipo ha creado y diseñado un nuevo conjunto de tecnologías y herramientas.
 
 
-### Pruebas RCP
-Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido tanto manual como automática y sólo deberemos seguir los pasos [Oficiales Manueales](https://wiki.polygon.technology/docs/zkEVM/develop/#connecting-to-zkevm) o [Oficiales Automática](https://public.zkevm-test.net/) y le damos directamente `add Metamask`, el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada la red, también puede seguir la guía oficial desde el equipo de [Zk-EVM-Polygon](https://polygon.technology/blog/your-three-step-guide-to-using-polygon-zkevm-yes-its-that-easy).
+### Pruebas RPC
+
+Para agregar el RPC en Metamask ha resultado sencillo, la experiencia ha sido tanto manual como automática y sólo deberemos seguir los pasos [Oficiales Manuales](https://wiki.polygon.technology/docs/zkEVM/develop/#connecting-to-zkevm) o [Oficiales Automática](https://public.zkevm-test.net/) y le damos directamente `add Metamask`, el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada la red, también puede seguir la guía oficial desde el equipo de [Zk-EVM-Polygon](https://polygon.technology/blog/your-three-step-guide-to-using-polygon-zkevm-yes-its-that-easy).
 
 ### Pruebas Faucet
 
@@ -192,20 +193,20 @@ En zkEVM Polygon para conseguir faucet podemos usar directamente cualquiera de G
 
 ### Pruebas Bridge
 
-Hemos enviado por el [Bridge zkEVM-Polygon](https://public.zkevm-test.net/) desde Goerli L1 a testnet-zkEVM-mago, la cantidad de [0.01 ETH](https://goerli.etherscan.io/tx/0xe95f6ef795215f402327abc2748842ac8070dfbed4fc47362ba78b975e1db18b) (0.002206758437339412 Ether = 2.86 usd ). Luego deberemos cambiar a nuestra nueva red de zkEVM-Polygon y [SÓLO aceptar el envío sin fee](https://explorer.public.zkevm-test.net/tx/0x351e744c9957a77a0c9e962fcd8000ef6ba48ea2e8023aa3cbe3c10d4c9cca59)(0 Ether = 0 usd) 
+Hemos enviado por el [Bridge Polygon zkEVM](https://public.zkevm-test.net/) desde Goerli L1 a testnet-zkEVM-mago, la cantidad de [0.01 ETH](https://goerli.etherscan.io/tx/0xe95f6ef795215f402327abc2748842ac8070dfbed4fc47362ba78b975e1db18b) (0.002206758437339412 Ether = 2.86 usd ). Luego deberemos cambiar a nuestra nueva red de Polygon zkEVM y [SÓLO aceptar el envío sin fee](https://explorer.public.zkevm-test.net/tx/0x351e744c9957a77a0c9e962fcd8000ef6ba48ea2e8023aa3cbe3c10d4c9cca59)(0 Ether = 0 usd) 
 
 ### Pruebas Deploy
 
-El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RCP de zkEVM-Polygon sin tener ningun tipo de inconveniente.
+El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RPC de Polygon zkEVM sin tener ningun tipo de inconveniente.
 
-* [Deploy  zkEVM-Polygon](https://explorer.public.zkevm-test.net/tx/0x52cf30f4289cdf5331f116bdb55ca1f63cc4571799616bd97ab431cfbacf7932)
+* [Deploy Polygon zkEVM](https://explorer.public.zkevm-test.net/tx/0x52cf30f4289cdf5331f116bdb55ca1f63cc4571799616bd97ab431cfbacf7932)
 * [Token Contract](https://explorer.public.zkevm-test.net/token/0xE391fC071fc166953502E6368B7FE713691A9B79/token-transfers)
 
 ### Pruebas Fee
 
-Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue casi instantáneo y el fee (0.000052211 Ether = 0.07 usd)
+Probamos a enviar desde Polygon zkEVM entre wallets 500 L2Pol , el envio fue casi instantáneo y el fee (0.000052211 Ether = 0.07 usd)
 
-* [Hash envio SczkEVM-Polygon](https://explorer.public.zkevm-test.net/tx/0xf2359dfc476a80a599e9d753a5d114900b9a77d87a2b35ab32f4cb82ef926403)
+* [Hash envio Polygon zkEVM](https://explorer.public.zkevm-test.net/tx/0xf2359dfc476a80a599e9d753a5d114900b9a77d87a2b35ab32f4cb82ef926403)
 
 
 ![Graph](/im%C3%A1genes/pol.png) 
@@ -215,17 +216,17 @@ Probamos a enviar desde zkEVM-Polygon entre wallets 500 L2Pol , el envio fue cas
 <div align="left">
   <h1 style="font-size: larger;">
    <img src="imágenes/zksync.png" width="25">
-   <strong>    Zk-Sync 2.0        </strong> 
+   <strong>   zkSync 2.0        </strong> 
   </h1>
 </div>
 
-## Principios de Zk-Sync 2.0
+## Principios de zkSync 2.0
 
 Según sus [documentos oficiales de zkSync 2.0](https://v2-docs.zksync.io/dev/#fundamental-topics) es un gran paso adelante en las tecnologías de Capa 2. Es una mejora largamente esperada que ofrece muchos beneficios nunca antes disfrutados por los desarrolladores de Ethereum como son:
 
-1. `Compatible con EVM:` zkSync es un paquete acumulativo de conocimiento cero compatible con EVM que admite contratos inteligentes de EVM generalizados. Esto significa que si tiene contratos inteligentes EVM, es muy fácil portar su dApp a zkSync 2.0.
+1. `Compatible con EVM:` zkSync es un zk rollup de conocimiento cero compatible (`zk o zero-knowledge`) con EVM que admite contratos inteligentes de EVM generalizados. Esto significa que si tiene contratos inteligentes EVM, es muy fácil portar su dApp a zkSync 2.0.
 
-2. `Ethos Compatible:`Eestamos muy alineados con el ethos de la descentralización y el código abierto. Todo nuestro código se esforzará por ser completamente de código abierto y zkSync ejecutará una hoja de ruta que descentralizará por completo el secuenciador y la generación de pruebas, y ejecutaremos una hoja de ruta de administración sustractiva organizacional, es decir, estaremos descentralizando nuestra organización.
+2. `Ethos Compatible:`Estamos muy alineados con el ethos de la descentralización y el código abierto. Todo nuestro código se esforzará por ser completamente de código abierto y zkSync ejecutará una hoja de ruta que descentralizará por completo el secuenciador y la generación de pruebas, y ejecutaremos una hoja de ruta de administración sustractiva organizacional, es decir, estaremos descentralizando nuestra organización.
 
 3. `Certeza:` A diferencia de los métodos anteriores que intentan escalar Ethereum, que en algunos casos han ofrecido garantías de seguridad más débiles que para L1 (por ejemplo, cadenas laterales, plasma y optimista), zkSync utiliza pruebas de conocimiento cero que ofrecen certeza de seguridad.
 
@@ -241,37 +242,37 @@ Hay mucha confusión entre la comunidad con respecto a los impactos de ser compa
 
 **Compatible con EVM**significa que se admite un porcentaje de los códigos de operación de EVM de Ethereum; por lo tanto, un porcentaje de los contratos inteligentes funcionan de forma inmediata.
 
-zkSync está optimizado para ser compatible con EVM y no equivalente a EVM. También puede revisar en sus documentos según ellos las ventajas frente a otros tipos de estas soluciones, si quiere saber más sobre ello vaya [directamente aquí](https://v2-docs.zksync.io/dev/fundamentals/faq.html#zksync-2-0-vs-alternatives)
+zkSync 2.0 está optimizado para ser compatible con EVM y no equivalente a EVM. También puede revisar en sus documentos según ellos las ventajas frente a otros tipos de estas soluciones, si quiere saber más sobre ello vaya [directamente aquí](https://v2-docs.zksync.io/dev/fundamentals/faq.html#zksync-2-0-vs-alternatives)
 
-### Pruebas RCP
+### Pruebas RPC
 
-Para agregar el RCP en Metamask ha resultado sencillo, la experiencia ha sido tanto manual como automática y sólo deberemos seguir los pasos [Oficiales Manuales](https://v2-docs.zksync.io/dev/troubleshooting/important-links.html#testnet-network-info) o [Oficiales Automática]() y le damos directamente `add Metamask`, el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada la red.
+Para agregar el RPC en Metamask ha resultado sencillo, la experiencia ha sido tanto manual como automática y sólo deberemos seguir los pasos [Oficiales Manuales](https://v2-docs.zksync.io/dev/troubleshooting/important-links.html#testnet-network-info) o [Oficiales Automática](https://portal.zksync.io/), conectamos nuestra cuenta y le damos directamente `add Metamask`, el cual mostrará en nuestra Metamask directamente los datos necesarios para tener configurada la red.
 
 ### Pruebas Faucet
 
-En zk-Sync2.0 para conseguir faucet podemos usar directamente cualquiera de Goerli, aquí os dejamos algunos de ellos pero si quieres tenerlos todos desde un sólo sitio te recomiendo visitar y probar [Faucet Link](https://faucetlink.to/goerli), en el también podrá ver una compartiva de los procedimientos para poder reclamar los `ETH` de prueba, luego tendrá que usar el `Bridge` para enviarlo de Goerli hacia zkSyn2.0. 
+En zkSync2.0 para conseguir faucet podemos usar directamente cualquiera de Goerli, aquí os dejamos algunos de ellos pero si quiere tenerlo todo desde un sólo sitio te recomendamos visitar y probar [Faucet Link](https://faucetlink.to/goerli), en el también podrá ver una compartiva de los procedimientos para poder reclamar los `ETH` de prueba, luego tendrá que usar el `Bridge` para enviarlo de Goerli hacia zkSync 2.0. 
 
-También podrá desde [zk-Sync reclamar el faucet](https://portal.zksync.io/faucet) siguiendo los pasos e interactuando con Twitter, aunque tardó en llegar, en mi caso entre 2-20 horas y tuve que hacer dos pedidos, pero al final llegó un envio con un combo de [(Link, Dai, Ether, Usdc y Wbtc)](https://zksync2-testnet.zkscan.io/address/0x3AC83946966B5E2cf4BB24d807a0Dd8232fea4ea/tokens). No era demasiado la cantidad de `ETH` para poder hacer el Deploy, así que mejor usar el [Bridge](https://portal.zksync.io/bridge/) desde Goerli hacia zk-Sync2.0.
+También podrá desde [zk-Sync reclamar el faucet](https://portal.zksync.io/faucet) siguiendo los pasos e interactuando con Twitter, aunque tardó en llegar, en nuestro caso entre 2-20 horas y tuvimos que hacer dos pedidos, pero al final nos llegó un envio con un combo de [(Link, Dai, Ether, Usdc y Wbtc)](https://zksync2-testnet.zkscan.io/address/0x3AC83946966B5E2cf4BB24d807a0Dd8232fea4ea/tokens). No era demasiado la cantidad de `ETH` para poder hacer el Deploy, así que mejor usar el [Bridge](https://portal.zksync.io/bridge/) desde Goerli hacia zkSync 2.0.
 
 * [Faucet Alchemy](https://goerlifaucet.com/)
 * [Faucet Mudit](https://goerli-faucet.mudit.blog/)
 
 ### Pruebas Bridge
 
-Hemos enviado por el [Bridge zk-Sync2.0](https://portal.zksync.io/bridge) desde Goerli L1 a zk-Sync, la cantidad de [0.03 ETH](https://goerli.etherscan.io/tx/0xf059474ab4b3834ea67806da73803c7cdea82795f1d282fcd5cf2105246ef56b) (0.004061343032894745 Ether = 5.2 usd). Solo hemos necesitado un paso para recibir nuestros `ETH` en zk-Sync2.0.
+Hemos enviado por el [Bridge zkSync 2.0](https://portal.zksync.io/bridge) desde Goerli L1 a zkSync 2.0, la cantidad de [0.03 ETH](https://goerli.etherscan.io/tx/0xf059474ab4b3834ea67806da73803c7cdea82795f1d282fcd5cf2105246ef56b) (0.004061343032894745 Ether = 5.2 usd). Solo hemos necesitado un paso para recibir nuestros `ETH` en zkSync2.0.
 
 ### Pruebas Deploy
 
-El deploy ha sido complejo, no nos vale con simple copia y pega en remix y alguna libreria de Open Zepelin, aquí deberemos usar su [Guía Oficial](https://v2-docs.zksync.io/api/hardhat/getting-started.html#project-setup) para usar sus SDK y poder deployar el contrato. También hemos tenido problemas para hacer la verficación, así como poder conseguir desplegar este contrato de ERC-20 dado que no hemos podido usar los métodos de `Remix` de copia-pega y añadir algunas librerias como hicimos con las otras pruebas.
+El deploy ha sido complejo, no nos vale con simple copia y pega en remix y alguna libreria de OpenZeppelin, aquí deberemos usar su [Guía Oficial](https://v2-docs.zksync.io/api/hardhat/getting-started.html#project-setup) para usar sus SDK y poder deployar el contrato. También hemos tenido problemas para hacer la verficación, así como poder conseguir desplegar este contrato de ERC-20 dado que no hemos podido usar los métodos de `Remix` de copia-pega y añadir algunas librerias como hicimos con las otras pruebas.
 
-* [Deploy zkEVM-zkSync](https://goerli.explorer.zksync.io/tx/0x076134b601d20b4acf8786dd33e6d448a81a5fc305655e65ddcd58fc7ac61086)
+* [Deploy zkSync 2.0](https://goerli.explorer.zksync.io/tx/0x076134b601d20b4acf8786dd33e6d448a81a5fc305655e65ddcd58fc7ac61086)
 * [Token Contract](https://goerli.explorer.zksync.io/address/0x02A545CF2b2AFe6730420b7Bd22cC9C2E6Da413E#events)
 
 ### Pruebas Fee
 
 Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue casi instantáneo y el fee (0.0003730602 ETH = 0,481 usd).
 
-* [Hash envio zkEVM-zkSync](https://goerli.explorer.zksync.io/tx/0x7bccce08efc978735e01b650af72f087f1b458a65b613a15e5e1c3cd2f87db07)
+* [Hash envio zkSync 2.0](https://goerli.explorer.zksync.io/tx/0x7bccce08efc978735e01b650af72f087f1b458a65b613a15e5e1c3cd2f87db07)
 
 ![Graph](/im%C3%A1genes/sync.png)
 
@@ -281,7 +282,7 @@ Probamos a enviar desde zkEVM-zkSync2.0 entre wallets 500 L2Pol, el envio fue ca
 
 ## Principios de ConsenSys zkEVM
 
-La red [ConsenSys zkEVM](https://goerli.zkevm.consensys.net/) es un nuevo zk-rollup, diseñado por ConsenSys R&D y operado por ConsenSys. El paquete acumulativo es la culminación de años de investigación y ofrece compatibilidad total con Ethereum Virtual Machine (EVM), por lo que los desarrolladores pueden implementar y administrar aplicaciones usando herramientas familiares como MetaMask, Truffle e Infura como si estuvieran usando Ethereum directamente. 
+La red [ConsenSys zkEVM](https://goerli.zkevm.consensys.net/) es un nuevo zk rollup, diseñado por ConsenSys R&D y operado por ConsenSys. El zk rollup es la culminación de años de investigación y ofrece compatibilidad total con Ethereum Virtual Machine (EVM), por lo que los desarrolladores pueden implementar y administrar aplicaciones usando herramientas familiares como MetaMask, Truffle e Infura como si estuvieran usando Ethereum directamente. 
 
 Los usuarios podrán unir activos entre la red de prueba de Goerli y zkEVM para probar sus contratos inteligentes y dapps utilizando las herramientas, la infraestructura y las billeteras con las que están familiarizados. La integración lista para usar con la cadena de herramientas de Ethereum existente permite la experiencia, la seguridad y la descentralización de Ethereum pero con tarifas de transacción ultrabajas. 
 
@@ -294,6 +295,6 @@ Así que aquí seguimos a la espera, en lo que hemos realizados pruebas, deploy,
 ---
 ### Agradecimientos
 
-Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zk-EVM o que no se les hizo demasiado aburrido el documento 😂 😂, con él hemos querido reforzar el poder de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
+Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zkEVM, con él hemos querido reforzar el poder de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol) y nuestro [Twitter](https://twitter.com/Layer2es), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
 
 Espero que les haya gustado, si quieren realizar pruebas en las diferentes redes o ver los códigos utilizados para la creación de este documento, visite la repo oficial [Nadai](https://github.com/Nadai2010) o el [Documento completo Nadai L2ESP Comprativa de ZkEVM](https://github.com/Nadai2010/Nadai-L2-ESP-Comparativa-ZkEVM)
