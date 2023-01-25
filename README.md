@@ -290,9 +290,42 @@ La nueva red de prueba beta privada ConsenSys zkEVM, equivalente a EVM, ya está
 
 ![Graph](/im%C3%A1genes/api.png)
 
-Así que aquí seguimos a la espera, en lo que hemos realizados pruebas, deploy, artículo...esta red de prueba privada aún no nos ha dado acceso para testearla, por lo que ya la analizaremos más adelante.
+Después un tiempo nos dieron permiso para poder acceder y agregar la RPCy empezamos a testearla.
 
----
+### Pruebas RPC
+
+Para agregar el RPC en Metamask ha resultado sencillo una vez tenemos la whitelist de Infura para poder darnos el endpoint. La experiencia ha sido manual, para ello deberemos de ir a Metamask, Redes y Agregar otras Redes. Puede consultar documentación oficial y como agregarla desde [aquí](https://consensys.net/docs/zk-evm/en/latest/get-started/configure-metamask/)
+
+### Pruebas Faucet
+
+En ConsenSys zkEVM para conseguir faucet podemos usar directamente cualquiera de Goerli, aquí os dejamos algunos de ellos pero si quiere tenerlo todo desde un sólo sitio te recomendamos visitar y probar [Faucet Link](https://faucetlink.to/goerli), en el también podrá ver una comparativa de los procedimientos para poder reclamar los `ETH` de prueba, luego tendrá que usar el `Bridge` para enviarlo de Goerli hacia ConsenSys zkEVM, también podra conseguir `10 USDC` desde [aquí oficialmente](https://bridge.goerli.zkevm.consensys.net/faucet?token=USDC&sourceNetwork=ethereum&destNetwork=consensys) pero deberá tener saldo de `ETH` en su cuenta para poder pagar el mint de esos USDC. 
+
+* [Faucet Alchemy](https://goerlifaucet.com/)
+* [Faucet Mudit](https://goerli-faucet.mudit.blog/)
+
+### Pruebas Bridge
+ 
+Hemos enviado por el [Bridge ConsenSys](https://bridge.goerli.zkevm.consensys.net/) desde Goerli hacia ConsenSys zkEVM la cantidad de [0.05 ETH](https://goerli.etherscan.io/tx/0x7634ff45653e11dc2fcbeba437e458e96240ba0f40fa09ffc0f8155ee00f1bd5) (0.000091611002565108 Ether = 0.12 usd ) se ha quedado el rele con 0.01 del envío, del resto todo ha sido en un sólo paso sin tener que interactuar desde L2.
+
+### Pruebas Deploy
+
+El deploy ha sido desde Remix, no habido ninguna complicación solo hemos cambiado el nombre del contrato para hacer un nuevo compile. Hemos conectado nuestro Metamask pero usando tanto el RPC de ConsenSys zkEVM sin tener ningun tipo de inconveniente. 
+
+
+* [Deploy ConsenSys zkEVM](https://explorer.goerli.zkevm.consensys.net/tx/0x629e1347f4b1e218999d26baf22eafe26ff280fa3a63b0625063cd306e0a0b37)
+* [Token Contract L2](https://explorer.goerli.zkevm.consensys.net/address/0xA330cF7FDE4F9FE6E36c3909650C72362D360421)
+
+
+### Pruebas Fee 
+
+Probamos a enviar desde ConsenSys zkEVM entre wallets 500 L2Cons , el envio fue casi instantáneo y el fee (0.000126611675365477 Ether = 0.16 usd)
+
+* [Hash envio ConsenSys zkEVM](https://explorer.goerli.zkevm.consensys.net/tx/0xd82a4fb291efb2d2866cf1105486f1ee52791538945716b0f23950e032e1ad5b)
+
+![Graph](/im%C3%A1genes/cons.png) 
+
+----
+
 ### Agradecimientos
 
 Si han llegado hasta aquí es que de verdad están interesados en las soluciones de zkEVM, con él hemos querido reforzar el poder de este tipo de soluciones así como una pequeña comparativa general de algunas de ellas. Si aún así siguen interesados y con ganas de aportar o aprender con nosotros no duden en unirse a las gran comunidad de [Telegram L2 Español](https://t.me/l2espaniol) y nuestro [Twitter](https://twitter.com/Layer2es), allí podra encontrar mucha información sobre Layer 2 y sobre el ecosistema Blockchain en global.
